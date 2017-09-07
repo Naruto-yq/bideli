@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  bideli
+
+  Created by 杨丽娟 on 17/8/30.
+  Copyright © 2017年 CMB Qianhai Financial Asset Exchange Co.Ltd. All rights reserved.
+*/
+
+//-------个人中心
+"Me" = "我";
+"BankCard" = "银行卡管理";
+"PasswordManagement" = "密码管理";
+"SystemSetting" = "系统设置";
+"Feedback" = "问题反馈";
+"Aboutus" = "关于我们";
+"UserIcon" = "头像";
+"UserNickname" = "昵称";
+"PhoneNumber" = "电话号码";
+"Logout" = "退出登录";
