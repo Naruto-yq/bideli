@@ -66,7 +66,7 @@
 
 - (void)SetupAllControllers
 {
-    NSArray *titlesString = @[@"首页", @"发现", @"我"];
+    NSArray *titlesString = @[MyLocalizedString(@"Home"), @"发现", @"我"];
     NSArray *imageString = @[@"tabbar_home_normal", @"tabbar_map_normal", @"tabbar_me_normal"];
     NSArray *seletedImageString = @[@"tabbar_home_selected", @"tabbar_map_selected", @"tabbar_me_selected"];
     
