@@ -10,6 +10,7 @@
 #import <BaiduMapAPI_Base/BMKMapManager.h>
 #import "QJMainTabBarController.h"
 #import "LocationPermissionsViewController.h"
+#import "LanuchAVPlayerVC.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +24,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[QJMainTabBarController alloc] init];
+    self.window.rootViewController = [[LanuchAVPlayerVC alloc] init];
+    
+//    self.window.rootViewController = [[QJMainTabBarController alloc] init];
     [self registerBaiduMap];
-    [self startLocation];
+//    [self startLocation];
     
 //    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权
 //      
@@ -33,35 +36,35 @@
     return YES;
 }
 
-- (void)startLocation {
-    // 判断该用户是否已经对房产网定位进行过授权
-    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权
-        // 展示位置授权页
-        LocationPermissionsViewController *locationPermissionsVC = [[LocationPermissionsViewController alloc] init];
-        [self restoreRootViewController:locationPermissionsVC];
-    } else {
-        // 将UITabBarController设置为跟控制器
-        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
-    }
-}
+//- (void)startLocation {
+//    // 判断该用户是否已经对房产网定位进行过授权
+//    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权
+//        // 展示位置授权页
+//        LocationPermissionsViewController *locationPermissionsVC = [[LocationPermissionsViewController alloc] init];
+//        [self restoreRootViewController:locationPermissionsVC];
+//    } else {
+//        // 将UITabBarController设置为跟控制器
+//        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+//    }
+//}
 
-// 登陆后淡入淡出更换rootViewController
-- (void)restoreRootViewController:(UIViewController *)rootViewController {
-    typedef void (^Animation)(void);
-    UIWindow* window = [UIApplication sharedApplication].keyWindow;
-    rootViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    Animation animation = ^{
-        BOOL oldState = [UIView areAnimationsEnabled];
-        [UIView setAnimationsEnabled:NO];
-        [UIApplication sharedApplication].keyWindow.rootViewController = rootViewController;
-        [UIView setAnimationsEnabled:oldState];
-    };
-    [UIView transitionWithView:window
-                      duration:0.5f
-                       options:UIViewAnimationOptionTransitionCrossDissolve
-                    animations:animation
-                    completion:nil];
-}
+//// 登陆后淡入淡出更换rootViewController
+//- (void)restoreRootViewController:(UIViewController *)rootViewController {
+//    typedef void (^Animation)(void);
+//    UIWindow* window = [UIApplication sharedApplication].keyWindow;
+//    rootViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    Animation animation = ^{
+//        BOOL oldState = [UIView areAnimationsEnabled];
+//        [UIView setAnimationsEnabled:NO];
+//        [UIApplication sharedApplication].keyWindow.rootViewController = rootViewController;
+//        [UIView setAnimationsEnabled:oldState];
+//    };
+//    [UIView transitionWithView:window
+//                      duration:0.5f
+//                       options:UIViewAnimationOptionTransitionCrossDissolve
+//                    animations:animation
+//                    completion:nil];
+//}
 
 
 #pragma mark - Third library
