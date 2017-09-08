@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <BaiduMapAPI_Base/BMKMapManager.h>
 #import "QJMainTabBarController.h"
+#import "LanuchAVPlayerVC.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[QJMainTabBarController alloc] init];
+    self.window.rootViewController = [[LanuchAVPlayerVC alloc] init];
     
     //创建并初始化一个引擎对象
     BMKMapManager *manager = [[BMKMapManager alloc] init];
