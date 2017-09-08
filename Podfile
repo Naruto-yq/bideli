@@ -7,5 +7,5 @@ target 'bideli' do
 	pod 'SDWebImage', '~> 3.7.5'
 	pod 'MJRefresh', '~> 3.1.0'
 	pod 'MBProgressHUD', '~> 1.0.0'
-    pod 'BaiduMapKit', '~> 3.4.0'
+    pod 'BaiduMapKit'#, '~> 3.4.0'
 end
