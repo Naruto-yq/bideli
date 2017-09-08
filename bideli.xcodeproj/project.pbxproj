@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */; };
+		0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */; };
+		0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */; };
 		0E8CDF451F58FE0200ED957C /* QJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CDF441F58FE0200ED957C /* QJProgressHUD.m */; };
 		0EB4E9061F56544F008441DF /* LatestProfitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4E9051F56544F008441DF /* LatestProfitButton.m */; };
 		0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4E9081F565ADE008441DF /* ItemInfo.m */; };
@@ -58,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E8CAEAD1F6235DC009A76B1 /* LanuchAVPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchAVPlayerVC.h; sourceTree = "<group>"; };
+		0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchAVPlayerVC.m; sourceTree = "<group>"; };
+		0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lanuch_movie.mp4; sourceTree = "<group>"; };
+		0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E8CDF431F58FE0200ED957C /* QJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJProgressHUD.h; sourceTree = "<group>"; };
 		0E8CDF441F58FE0200ED957C /* QJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJProgressHUD.m; sourceTree = "<group>"; };
 		0EB4E9041F56544F008441DF /* LatestProfitButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestProfitButton.h; sourceTree = "<group>"; };
@@ -156,6 +163,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8CAEA91F62355E009A76B1 /* Newfeature */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CAEAA1F62355E009A76B1 /* Controller */,
+				0E8CAEAB1F62355E009A76B1 /* Model */,
+				0E8CAEAC1F62355E009A76B1 /* View */,
+			);
+			path = Newfeature;
+			sourceTree = "<group>";
+		};
+		0E8CAEAA1F62355E009A76B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CAEAD1F6235DC009A76B1 /* LanuchAVPlayerVC.h */,
+				0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E8CAEAB1F62355E009A76B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E8CAEAC1F62355E009A76B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0E8CDF421F58FE0200ED957C /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +257,7 @@
 		0EE7C2401F53ADB800464B25 /* bideli */ = {
 			isa = PBXGroup;
 			children = (
+				0E8CAEA91F62355E009A76B1 /* Newfeature */,
 				0EE7C2991F53B00400464B25 /* mainTabBar */,
 				0EE7C2741F53B00400464B25 /* Home */,
 				0EE7C2EC1F53BC1500464B25 /* Discover */,
@@ -379,6 +420,8 @@
 		0EE7C2DF1F53B09D00464B25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */,
+				0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */,
 				0EE7C2E01F53B09D00464B25 /* Assets.xcassets */,
 				0EE7C2E11F53B09D00464B25 /* Info.plist */,
 				0EE7C2FB1F53C4EB00464B25 /* bideli-Prefix.pch */,
@@ -597,8 +640,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */,
 				0EE7C2E41F53B09D00464B25 /* Assets.xcassets in Resources */,
 				CCF8ECA71F56F9A400D78A8C /* Localizable.strings in Resources */,
+				0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */,
 				0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +734,7 @@
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,
+				0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */,
 				0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */,
 				0EE7C2F31F53BC2F00464B25 /* DiscoverVC.m in Sources */,
 				0EE7C2D11F53B00400464B25 /* QJTabBarButton.m in Sources */,
