@@ -46,6 +46,7 @@
 #define kC6_F54949    HEXCOLOR(0xF54949)     //红色
 #define kC7_FFBD50    HEXCOLOR(0xFFBD50)     //黄色
 #define kC8_F8F8F8    HEXCOLOR(0xF8F8F8)     //背景颜色
+#define kC9_FFFFFF    HEXCOLOR(0xFFFFFF)     //白色
 
 //字体设置
 #define kF0_30         [UIFont systemFontOfSize:30]

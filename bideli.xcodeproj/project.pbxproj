@@ -28,7 +28,7 @@
 		0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EE7C2E11F53B09D00464B25 /* Info.plist */; };
 		0EE7C2E81F53BB4A00464B25 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7C2E71F53BB4A00464B25 /* HomeVC.m */; };
 		0EE7C2EB1F53BB6000464B25 /* MeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7C2EA1F53BB6000464B25 /* MeVC.m */; };
-		0EE7C2F31F53BC2F00464B25 /* DiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7C2F21F53BC2F00464B25 /* DiscoverVC.m */; };
+		0EE7C2F31F53BC2F00464B25 /* DiscoverVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7C2F21F53BC2F00464B25 /* DiscoverVC.mm */; };
 		0EE7C3021F53FF6B00464B25 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7C3011F53FF6B00464B25 /* BaseViewController.m */; };
 		0EEFA58C1F550FCC0014C7A6 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA5891F550FCC0014C7A6 /* BannerView.m */; };
 		0EEFA58D1F550FCC0014C7A6 /* BannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA58B1F550FCC0014C7A6 /* BannerViewCell.m */; };
@@ -36,6 +36,12 @@
 		0EEFA59A1F555DFA0014C7A6 /* InteractionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA5991F555DFA0014C7A6 /* InteractionCell.m */; };
 		0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA59C1F555EB90014C7A6 /* InteractionCollectionViewCell.m */; };
 		32652CBC6477AC3E461CDE1A /* libPods-bideli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5F38DDC67E2999B61664EC /* libPods-bideli.a */; };
+		CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB21F626DEA0088B9E6 /* MapPointAnnotation.m */; };
+		CC1D8AB61F626DEA0088B9E6 /* MapPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB41F626DEA0088B9E6 /* MapPointModel.m */; };
+		CC1D8AB91F626DF40088B9E6 /* BusinessPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */; };
+		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
+		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
+		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCF8ECA71F56F9A400D78A8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCF8ECA91F56F9A400D78A8C /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -98,7 +104,7 @@
 		0EE7C2E91F53BB6000464B25 /* MeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeVC.h; sourceTree = "<group>"; };
 		0EE7C2EA1F53BB6000464B25 /* MeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeVC.m; sourceTree = "<group>"; };
 		0EE7C2F11F53BC2F00464B25 /* DiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverVC.h; sourceTree = "<group>"; };
-		0EE7C2F21F53BC2F00464B25 /* DiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverVC.m; sourceTree = "<group>"; };
+		0EE7C2F21F53BC2F00464B25 /* DiscoverVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DiscoverVC.mm; sourceTree = "<group>"; };
 		0EE7C2F51F53C43900464B25 /* APIStringMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIStringMacros.h; sourceTree = "<group>"; };
 		0EE7C2F61F53C43900464B25 /* DimensMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
 		0EE7C2F71F53C43900464B25 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -121,6 +127,18 @@
 		4F5F38DDC67E2999B61664EC /* libPods-bideli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bideli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D19527291C33A896983DD2 /* Pods-bideli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bideli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bideli/Pods-bideli.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F394F121282C27BF364883 /* Pods-bideli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bideli.release.xcconfig"; path = "Pods/Target Support Files/Pods-bideli/Pods-bideli.release.xcconfig"; sourceTree = "<group>"; };
+		CC1D8AB11F626DEA0088B9E6 /* MapPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointAnnotation.h; sourceTree = "<group>"; };
+		CC1D8AB21F626DEA0088B9E6 /* MapPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointAnnotation.m; sourceTree = "<group>"; };
+		CC1D8AB31F626DEA0088B9E6 /* MapPointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointModel.h; sourceTree = "<group>"; };
+		CC1D8AB41F626DEA0088B9E6 /* MapPointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointModel.m; sourceTree = "<group>"; };
+		CC1D8AB71F626DF40088B9E6 /* BusinessPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPointView.h; sourceTree = "<group>"; };
+		CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessPointView.m; sourceTree = "<group>"; };
+		CC1D8ABB1F626DFE0088B9E6 /* DiscoverViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewModel.h; sourceTree = "<group>"; };
+		CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewModel.m; sourceTree = "<group>"; };
+		CC1D8ABE1F6272690088B9E6 /* LocationPermissionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationPermissionsViewController.h; sourceTree = "<group>"; };
+		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
+		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
+		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCF8ECA81F56F9A400D78A8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -159,6 +177,8 @@
 		0E8CDF421F58FE0200ED957C /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */,
+				CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */,
 				0E8CDF431F58FE0200ED957C /* QJProgressHUD.h */,
 				0E8CDF441F58FE0200ED957C /* QJProgressHUD.m */,
 			);
@@ -367,6 +387,8 @@
 		0EE7C2DB1F53B09D00464B25 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CC1D8ABE1F6272690088B9E6 /* LocationPermissionsViewController.h */,
+				CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */,
 				0EE7C2DC1F53B09D00464B25 /* AppDelegate.h */,
 				0EE7C2DD1F53B09D00464B25 /* AppDelegate.m */,
 				0EE7C2DE1F53B09D00464B25 /* main.m */,
@@ -393,6 +415,7 @@
 				0EE7C2ED1F53BC1500464B25 /* Controller */,
 				0EE7C2EE1F53BC1500464B25 /* Model */,
 				0EE7C2F01F53BC1500464B25 /* View */,
+				CC1D8ABA1F626DFE0088B9E6 /* ViewModel */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -401,7 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE7C2F11F53BC2F00464B25 /* DiscoverVC.h */,
-				0EE7C2F21F53BC2F00464B25 /* DiscoverVC.m */,
+				0EE7C2F21F53BC2F00464B25 /* DiscoverVC.mm */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -409,6 +432,10 @@
 		0EE7C2EE1F53BC1500464B25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC1D8AB11F626DEA0088B9E6 /* MapPointAnnotation.h */,
+				CC1D8AB21F626DEA0088B9E6 /* MapPointAnnotation.m */,
+				CC1D8AB31F626DEA0088B9E6 /* MapPointModel.h */,
+				CC1D8AB41F626DEA0088B9E6 /* MapPointModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,6 +443,8 @@
 		0EE7C2F01F53BC1500464B25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC1D8AB71F626DF40088B9E6 /* BusinessPointView.h */,
+				CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,6 +502,15 @@
 				B2F394F121282C27BF364883 /* Pods-bideli.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC1D8ABA1F626DFE0088B9E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC1D8ABB1F626DFE0088B9E6 /* DiscoverViewModel.h */,
+				CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CCBC99081F55A763001DFEC4 /* AssetView */ = {
@@ -679,24 +717,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1D8AB91F626DF40088B9E6 /* BusinessPointView.m in Sources */,
 				0EE7C2E31F53B09D00464B25 /* main.m in Sources */,
 				0E8CDF451F58FE0200ED957C /* QJProgressHUD.m in Sources */,
 				0EE7C3021F53FF6B00464B25 /* BaseViewController.m in Sources */,
+				CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */,
 				0EE7C2D01F53B00400464B25 /* QJTabBar.m in Sources */,
 				0EE7C2CE1F53B00400464B25 /* QJNavigationController.m in Sources */,
 				0EEFA59A1F555DFA0014C7A6 /* InteractionCell.m in Sources */,
+				CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */,
 				0EEFA58C1F550FCC0014C7A6 /* BannerView.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,
+				CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */,
 				0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */,
-				0EE7C2F31F53BC2F00464B25 /* DiscoverVC.m in Sources */,
+				0EE7C2F31F53BC2F00464B25 /* DiscoverVC.mm in Sources */,
 				0EE7C2D11F53B00400464B25 /* QJTabBarButton.m in Sources */,
 				0EB4E9061F56544F008441DF /* LatestProfitButton.m in Sources */,
 				0EE7C2EB1F53BB6000464B25 /* MeVC.m in Sources */,
 				0EEFA58D1F550FCC0014C7A6 /* BannerViewCell.m in Sources */,
 				0EE7C2E81F53BB4A00464B25 /* HomeVC.m in Sources */,
+				CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */,
 				0EE5961F1F5808AE004DA871 /* UserInfoCell.m in Sources */,
+				CC1D8AB61F626DEA0088B9E6 /* MapPointModel.m in Sources */,
 				0EE7C2E21F53B09D00464B25 /* AppDelegate.m in Sources */,
 				0EEFA5971F555DDA0014C7A6 /* BaseTableViewCell.m in Sources */,
 				0EE7C2CD1F53B00400464B25 /* QJMainTabBarController.m in Sources */,
