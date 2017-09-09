@@ -41,7 +41,7 @@
     
     UILabel *unitLabel = [UILabel new];
     unitLabel.text = MyLocalizedString(@"stoneUnit");
-    unitLabel.textColor = HEXCOLOR(0x999999);
+    unitLabel.textColor = HEXCOLOR(0x333333);
     unitLabel.font = [UIFont systemFontOfSize:IndicateLabelTFontSize];
     [self addSubview:unitLabel];
     self.unitLabel = unitLabel;
@@ -62,7 +62,7 @@
         make.right.mas_equalTo(wself.mas_right).offset(-IndicateRightMargin);
         make.centerY.mas_equalTo(wself.mas_centerY);
         make.height.mas_equalTo(wself);
-        make.width.mas_equalTo(rWidth(40));
+        make.width.mas_equalTo(rWidth(32));
     }];
     
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -8,6 +8,7 @@
 
 #import "HomeVC.h"
 #import "PurchaseStoneVC.h"
+#import "TradeVC.h"
 #import "BannerView.h"
 #import "InteractionCell.h"
 #import "AssetCell.h"
@@ -174,9 +175,25 @@
 }
 
 - (void)interactionCell:(InteractionCell *)cell DidSelectedAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        PurchaseStoneVC *purchaseVc = [[PurchaseStoneVC alloc] init];
-        [self.navigationController pushViewController:purchaseVc animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            PurchaseStoneVC *purchaseVc = [[PurchaseStoneVC alloc] init];
+            [self.navigationController pushViewController:purchaseVc animated:YES];
+        }
+            break;
+            
+        case 2:
+        {
+            TradeVC *tradeVc = [[TradeVC alloc] init];
+            [self.navigationController pushViewController:tradeVc animated:YES];
+        }
+            break;
+
+
+            
+        default:
+            break;
     }
 }
 

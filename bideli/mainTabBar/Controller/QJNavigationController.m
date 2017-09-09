@@ -7,9 +7,16 @@
 //
 
 #import "QJNavigationController.h"
+#import "UIBarButtonItem+NavleftBarButtonItem.h"
+
+@interface QJNavigationController ()<UINavigationControllerDelegate>
+@end
 
 @implementation QJNavigationController
-
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.delegate = self;
+}
 /**
  *  一个类只会调用一次，第一次使用这个类的时候会调用
  */
@@ -58,8 +65,26 @@
 {
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
+        // 设置导航条的按钮
+        UIBarButtonItem *popPre = [UIBarButtonItem barButtonItemWithImage:@"left_arrow_black" highImage:nil target:self action:@selector(popToPre)];
+        viewController.navigationItem.leftBarButtonItem = popPre;
     }
     [super pushViewController:viewController animated:animated];
 }
 
+- (void)popToPre
+{
+    [self popViewControllerAnimated:YES];
+}
+
+#pragma mark ---- navigation delegate
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    //删除系统自带的tabBarButton
+    for (UIView *tabBar in self.tabBarController.tabBar.subviews) {
+        if ([tabBar isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabBar removeFromSuperview];
+        }
+    }
+}
 @end

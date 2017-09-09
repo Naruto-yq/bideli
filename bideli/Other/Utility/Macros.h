@@ -60,7 +60,7 @@
 #define settingCellFontSize 15.0f
 #define settingCellHeight   55
 #define cellArrowW 20
-#define IndicateLabelW 76
+#define IndicateLabelW 64
 #define IndicateLabelH 20
 #define IndicateFieldH 36
 #define IndicateButtonW rWidth(92)
