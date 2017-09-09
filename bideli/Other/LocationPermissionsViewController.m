@@ -35,7 +35,7 @@
     [self.view addSubview:titleLabel];
     
     UILabel *subTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(titleLabel.frame) + 20, SCREEN_WIDTH, 20)];
-    subTitleLabel.text = @"为您精准推荐附近房源，使用地图找房";
+    subTitleLabel.text = @"为您精准推荐附近商圈";
     subTitleLabel.textColor = KC1_515151;
     subTitleLabel.font = [UIFont systemFontOfSize:13.0f];
     subTitleLabel.textAlignment = NSTextAlignmentCenter;

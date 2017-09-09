@@ -7,9 +7,10 @@
 //
 
 #import "DiscoverVC.h"
+#import <BaiduMapAPI_Map/BMKPointAnnotation.h>
 #import <BaiduMapAPI_Map/BMKMapView.h>
 #import <BaiduMapAPI_Location/BMKLocationService.h>
-#import <BaiduMapAPI_Map/BMKPointAnnotation.h>
+#import <BaiduMapAPI_Map/BMKPinAnnotationView.h>
 #import <BaiduMapAPI_Search/BMKPoiSearch.h>
 #import "MapPointModel.h"
 #import "BusinessPointView.h"
@@ -41,6 +42,7 @@
     [self.mapView viewWillAppear];
     self.mapView.delegate = self;
     
+    [self initializeBaseData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -50,17 +52,52 @@
 }
 
 #pragma mark -- mapView delegate
-- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation {
-    BusinessPointView *pointView = [BusinessPointView businessPointViewWithMapView:mapView Annotation:annotation];
-    MapPointAnnotation *mapAnnotation = (MapPointAnnotation *)annotation;
-    pointView.frame = CGRectMake(0, 0, 96, 130);
-    pointView.mapPointModel = mapAnnotation.mapPointModel;
-    pointView.canShowCallout = NO;
-    pointView.enabled = YES;
-    
-    return pointView;
-    
+- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id <BMKAnnotation>)annotation {
+    // 创建大头针
+    BusinessPointView *annotationView = [BusinessPointView annotationViewWithMap:mapView withAnnotation:annotation];
+ /*   YMPaopaoView *paopaoView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([YMPaopaoView class]) owner:nil options:nil] lastObject];
+    paopaoView.delegate = self;
+    YMPointAnnotation *anno = (YMPointAnnotation *)annotationView.annotation;
+    paopaoView.poi = anno.poi;
+    annotationView.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:paopaoView];
+  */
+    return annotationView;
 }
+/*
+- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation {
+    if ([annotation isKindOfClass:[BMKPointAnnotation class]]) {
+        BMKPinAnnotationView *newAnnotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"mapPointBg"];
+        [newAnnotationView setImage:[UIImage imageNamed:@"mapPointBg"]];
+        newAnnotationView.pinColor = BMKPinAnnotationColorPurple;
+        newAnnotationView.animatesDrop = YES;// 设置该标注点动画显示
+        return newAnnotationView;
+    }
+    return nil;
+    
+//    NSString *AnnotationViewID = @"renameMark";
+//    BMKAnnotationView *annotationView = (BMKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
+//    if (annotationView == nil) {
+//        annotationView = [[BMKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
+//        [annotationView setImage:[UIImage imageNamed:@"mapPointBg"]];
+//        // 设置颜色
+//        //        annotationView.pinColor = BMKPinAnnotationColorPurple;
+//        // 从天上掉下效果
+////        annotationView.animatesDrop = YES;
+//        // 设置可拖拽
+//        //annotationView.draggable = YES;
+//    }
+//    return annotationView;
+    
+    
+//    BusinessPointView *pointView = [BusinessPointView businessPointViewWithMapView:mapView Annotation:annotation];
+//    MapPointAnnotation *mapAnnotation = (MapPointAnnotation *)annotation;
+//    pointView.frame = CGRectMake(0, 0, 96, 130);
+//    pointView.mapPointModel = mapAnnotation.mapPointModel;
+//    pointView.canShowCallout = NO;
+//    pointView.enabled = YES;
+//    return pointView;
+    
+}*/
 
 #pragma mark --百度地图代理
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
@@ -68,7 +105,7 @@
     self.coordinate2D = userLocation.location.coordinate;
     [self.mapView updateLocationData:userLocation];
     // 关闭定位
-    [self.locationService stopUserLocationService];
+    //[self.locationService stopUserLocationService];
 }
 
 /**
@@ -90,15 +127,14 @@
 
 - (void)initializeBaseData {
     [self checkAllowLocationService];
-    
-    [self.locationService startUserLocationService];
-
-    //    DiscoverViewModel *VM = [[DiscoverViewModel alloc] init];
-    //    [self.businessDataSource addObjectsFromArray:[VM businessDataSource]];
-    //    if (self.businessDataSource.count > 0) {
-    //        [self addAnnotationViewToMapView];
-    //    }
-    
+    if (self.businessDataSource.count > 0) {
+        [self.businessDataSource removeAllObjects];
+    }
+    DiscoverViewModel *VM = [[DiscoverViewModel alloc] init];
+    [self.businessDataSource addObjectsFromArray:[VM businessDataSource]];
+    if (self.businessDataSource.count > 0) {
+        [self addAnnotationViewToMapView];
+    }
 }
 
 /**
@@ -114,7 +150,6 @@
         self.mapView.showsUserLocation = YES;//先关闭显示的定位图层
         self.mapView.userTrackingMode = BMKUserTrackingModeFollow;//设置定位的状态
         self.mapView.showsUserLocation = YES;//显示定位图层
-        
     }
 }
 
@@ -127,17 +162,26 @@
         [self.mapView removeAnnotation:obj];
     }
     // 添加标注
-//        for (MapPointModel *model in self.businessDataSource) {
-//            MapPointAnnotation *annotation = [[MapPointAnnotation alloc] initWithMapPointModel:model];
-//            CLLocationCoordinate2D coor;
-//            coor.latitude = model.lat;
-//            coor.longitude = model.lng;
-//            annotation.coordinate = coor;
-//            annotation.title = model.name;
-//            annotation.mapPointModel = model;
-//            [self.mapView addAnnotation:annotation];
-//        }
+//    for (MapPointModel *model in self.businessDataSource) {
+//        MapPointAnnotation *annotation = [[MapPointAnnotation alloc] initWithMapPointModel:model];
+//        CLLocationCoordinate2D coor;
+//        coor.latitude = model.lat;
+//        coor.longitude = model.lng;
+//        annotation.coordinate = coor;
+//        annotation.title = model.name;
+//        annotation.mapPointModel = model;
+//        [self.mapView addAnnotation:annotation];
+//    }
 //    [self.mapView setCenterCoordinate:self.coordinate2D animated:YES];
+    
+    // 添加一个PointAnnotation
+    BMKPointAnnotation* annotation = [[BMKPointAnnotation alloc]init];
+//    CLLocationCoordinate2D coor;
+//    coor.latitude = 39.915;
+//    coor.longitude = 116.404;
+    annotation.coordinate = self.coordinate2D;
+    annotation.title = @"这里是深圳";
+    [self.mapView addAnnotation:annotation];
 }
 
 #pragma mark --lazy init
@@ -147,16 +191,19 @@
         _mapView.delegate =self;
         //设置地图的显示样式
         _mapView.mapType = BMKMapTypeStandard;
+        _mapView.buildingsEnabled = YES;//设定地图是否现显示3D楼块效果
+        _mapView.overlookEnabled = YES; //设定地图View能否支持俯仰角
         //在手机上当前可使用的级别为3-21级
-        self.mapView.zoomLevel = 18;
+        _mapView.zoomLevel = 12;
         //设定地图是否打开路况图层
-        self.mapView.trafficEnabled = YES;
+        _mapView.trafficEnabled = NO;
         //底图poi标注
-        self.mapView.showMapPoi = YES;
+        _mapView.showMapPoi = YES;
         //设定地图View能否支持旋转
-        self.mapView.rotateEnabled = YES;
+        _mapView.rotateEnabled = YES;
         //设定地图View能否支持用户移动地图
-        self.mapView.scrollEnabled = YES;
+        _mapView.scrollEnabled = YES;
+        _mapView.userTrackingMode = BMKUserTrackingModeNone;//设置定位的状态
     }
     return _mapView;
 }
@@ -173,6 +220,8 @@
         //初始化BMKLocationService
         _locationService = [[BMKLocationService alloc]init];
         _locationService.delegate = self;
+        _locationService.distanceFilter = 200;//设定定位的最小更新距离，这里设置 200m 定位一次，频繁定位会增加耗电量
+        _locationService.desiredAccuracy = kCLLocationAccuracyHundredMeters;//设定定位精度
     }
     return _locationService;
 }
