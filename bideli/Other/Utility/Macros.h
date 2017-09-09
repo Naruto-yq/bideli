@@ -9,8 +9,8 @@
 #ifndef Macros_h
 #define Macros_h
 
-//#define APPKEY_BaiDuMap @"TmXwfzot2GL0G1oS2OsfiIMGrvceA1Sh" //bundleId:hake
-#define APPKEY_BaiDuMap @"wia9R6nYimxncXMqc0WBqltG0ZmvUOps" //bundleId:yuqin
+#define APPKEY_BaiDuMap @"TmXwfzot2GL0G1oS2OsfiIMGrvceA1Sh" //bundleId:hake
+//#define APPKEY_BaiDuMap @"wia9R6nYimxncXMqc0WBqltG0ZmvUOps" //bundleId:yuqin
 
 #import "UtilsMacros.h"
 
