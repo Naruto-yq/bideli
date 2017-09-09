@@ -149,7 +149,7 @@
         [self.locationService startUserLocationService];
         self.mapView.showsUserLocation = YES;//先关闭显示的定位图层
         self.mapView.userTrackingMode = BMKUserTrackingModeFollow;//设置定位的状态
-        self.mapView.showsUserLocation = YES;//显示定位图层
+        self.mapView.showsUserLocation = NO;//显示定位图层
     }
 }
 

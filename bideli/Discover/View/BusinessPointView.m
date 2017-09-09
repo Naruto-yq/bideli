@@ -49,7 +49,7 @@
         if ([annotation isKindOfClass:[MapPointAnnotation class]]) {
             annoView.annotation = (MapPointAnnotation *)annotation;
         }
-        annoView.image = [UIImage imageNamed:@"mapPointBg"];
+        annoView.image = [UIImage imageNamed:@"icon_green"];
         return annoView;
     }
     return nil;
