@@ -39,6 +39,7 @@
 		0EEFA59A1F555DFA0014C7A6 /* InteractionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA5991F555DFA0014C7A6 /* InteractionCell.m */; };
 		0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFA59C1F555EB90014C7A6 /* InteractionCollectionViewCell.m */; };
 		32652CBC6477AC3E461CDE1A /* libPods-bideli.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5F38DDC67E2999B61664EC /* libPods-bideli.a */; };
+		CC02939F1F63E87D00A3410A /* BusinessPaoPaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC02939E1F63E87D00A3410A /* BusinessPaoPaoView.m */; };
 		CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB21F626DEA0088B9E6 /* MapPointAnnotation.m */; };
 		CC1D8AB61F626DEA0088B9E6 /* MapPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB41F626DEA0088B9E6 /* MapPointModel.m */; };
 		CC1D8AB91F626DF40088B9E6 /* BusinessPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */; };
@@ -134,6 +135,8 @@
 		4F5F38DDC67E2999B61664EC /* libPods-bideli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bideli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D19527291C33A896983DD2 /* Pods-bideli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bideli.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bideli/Pods-bideli.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F394F121282C27BF364883 /* Pods-bideli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bideli.release.xcconfig"; path = "Pods/Target Support Files/Pods-bideli/Pods-bideli.release.xcconfig"; sourceTree = "<group>"; };
+		CC02939D1F63E87D00A3410A /* BusinessPaoPaoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPaoPaoView.h; sourceTree = "<group>"; };
+		CC02939E1F63E87D00A3410A /* BusinessPaoPaoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessPaoPaoView.m; sourceTree = "<group>"; };
 		CC1D8AB11F626DEA0088B9E6 /* MapPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointAnnotation.h; sourceTree = "<group>"; };
 		CC1D8AB21F626DEA0088B9E6 /* MapPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointAnnotation.m; sourceTree = "<group>"; };
 		CC1D8AB31F626DEA0088B9E6 /* MapPointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointModel.h; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 			children = (
 				CC1D8AB71F626DF40088B9E6 /* BusinessPointView.h */,
 				CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */,
+				CC02939D1F63E87D00A3410A /* BusinessPaoPaoView.h */,
+				CC02939E1F63E87D00A3410A /* BusinessPaoPaoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 				0EEFA59A1F555DFA0014C7A6 /* InteractionCell.m in Sources */,
 				CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */,
 				0EEFA58C1F550FCC0014C7A6 /* BannerView.m in Sources */,
+				CC02939F1F63E87D00A3410A /* BusinessPaoPaoView.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,

@@ -14,6 +14,9 @@
 
 @property (nonatomic,strong) MapPointModel *mapPointModel;
 
+/** 标注点的protocol，提供了标注类的基本信息函数*/
+@property (nonatomic, weak) id<BMKAnnotation> delegate;
+
 - (id)initWithMapPointModel:(MapPointModel *)mapPointModel;
 
 @end
