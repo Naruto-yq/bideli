@@ -16,6 +16,7 @@
 @interface BusinessPointView()
 
 @property (nonatomic,weak) UIImageView *bgView;
+@property (nonatomic,weak) UILabel *titleLabel;     // 名称
 @property (nonatomic,weak) UILabel *nameLabel;     // 名称
 @property (nonatomic,weak) UIImageView *imageView; //头像
 
@@ -33,6 +34,7 @@
 
 - (instancetype)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier]) {
+        [self setupSubviews];
     }
     return self;
 }
@@ -49,7 +51,8 @@
         if ([annotation isKindOfClass:[MapPointAnnotation class]]) {
             annoView.annotation = (MapPointAnnotation *)annotation;
         }
-        annoView.image = [UIImage imageNamed:@"icon_green"];
+        
+        annoView.image = [UIImage imageNamed:@"mapPointBg"];
         return annoView;
     }
     return nil;
@@ -104,5 +107,14 @@
 
 
 
+- (void)setupSubviews {
+    UILabel *titleLabel = [UILabel new];
+    titleLabel.text = @"xxx";
+    [self addSubview:titleLabel];
+}
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.titleLabel.frame = self.bounds;
+}
 @end

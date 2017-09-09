@@ -24,11 +24,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     
-//    self.window.rootViewController = [[LanuchAVPlayerVC alloc] init];
+    self.window.rootViewController = [[LanuchAVPlayerVC alloc] init];
     
     
     [self registerBaiduMap];
-    self.window.rootViewController = [[QJMainTabBarController alloc] init];
+    //self.window.rootViewController = [[QJMainTabBarController alloc] init];
 //    [self startLocation];
     
 //    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权

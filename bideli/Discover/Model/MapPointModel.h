@@ -13,11 +13,11 @@
 /**
  经度
  */
-@property (nonatomic, assign) CGFloat lng;
+@property (nonatomic, assign) double lng;
 /**
  纬度
  */
-@property (nonatomic, assign) CGFloat lat;
+@property (nonatomic, assign) double lat;
 /**
  商家名称
  */
