@@ -7,11 +7,13 @@
 //
 
 #import "HomeVC.h"
+#import "PurchaseStoneVC.h"
 #import "BannerView.h"
 #import "InteractionCell.h"
 #import "AssetCell.h"
 #import "ItemInfo.h"
-@interface HomeVC ()<UITableViewDelegate, UITableViewDataSource, BannerViewDelegate>
+
+@interface HomeVC ()<UITableViewDelegate, UITableViewDataSource, BannerViewDelegate, InteractionCellDelegate>
 
 @property (nonatomic, strong)UITableView *tableView;
 @property(nonatomic, strong)BannerView  *bannerView;
@@ -30,8 +32,8 @@
     
     
     NSArray *itemDicts = @[
-                            @{@"title": @"采购原石",@"icon":@"purchase"}, @{@"title": @"寻宝",@"icon":@"purchase"}, @{@"title": @"交易",@"icon":@"purchase"},
-                            @{@"title": @"充值提现",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"},
+                            @{@"title": @"采购原石",@"icon":@"purchase"}, @{@"title": @"寻宝",@"icon":@"purchase"}, @{@"title": @"交易",@"icon":@"trade"},
+                            @{@"title": @"充值提现",@"icon":@"rechargewithdraw"}, @{@"title": @"商城",@"icon":@"mall"}, @{@"title": @"支付",@"icon":@"purchase"},
                             @{@"title": @"预留",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"},
                             ];
     
@@ -103,6 +105,7 @@
     if (indexPath.section == eHomeSectionName_Interaction) {
         InteractionCell *cell = [InteractionCell cellWithTableView:tableView];
         cell.interactionArray = self.itemArray;
+        cell.delegate = self;
         return cell;
     }else if (indexPath.section == eHomeSectionName_Asset) {
         AssetCell *cell = [AssetCell cellWithTableView:tableView];
@@ -170,21 +173,14 @@
 
 }
 
+- (void)interactionCell:(InteractionCell *)cell DidSelectedAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        PurchaseStoneVC *purchaseVc = [[PurchaseStoneVC alloc] init];
+        [self.navigationController pushViewController:purchaseVc animated:YES];
+    }
+}
+
 #pragma mark -- bannerView delegate
 - (void)bannerView:(BannerView *)bannerView didSelectedAtIndex:(NSInteger)nIndex {
 }
-
-//#pragma mark -- scrollview delegate
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    CGFloat sectionHeaderHeight = HomeBannerH;
-//    CGFloat sectionFooterHeight = rHeight(80);
-//    CGFloat offsetY = scrollView.contentOffset.y;
-//    if (offsetY >= 0 && offsetY <= sectionHeaderHeight) {
-//        scrollView.contentInset = UIEdgeInsetsMake(-offsetY, 0, -sectionFooterHeight, 0);
-//    }else if (offsetY >= sectionHeaderHeight && offsetY <= scrollView.contentSize.height - scrollView.frame.size.height - sectionFooterHeight) {
-//        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, -sectionFooterHeight, 0);
-//    }else if (offsetY >= scrollView.contentSize.height - scrollView.frame.size.height - sectionFooterHeight && offsetY <= scrollView.contentSize.height - scrollView.frame.size.height) {
-//        scrollView.contentInset = UIEdgeInsetsMake(-offsetY, 0, -(scrollView.contentSize.height - scrollView.frame.size.height - sectionFooterHeight), 0);
-//    }
-//}
 @end

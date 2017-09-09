@@ -135,9 +135,4 @@
         [self.navigationController pushViewController:destVc animated:YES];
     }
 }
-
-- (void)loadWebViewWithTitle:(NSString *)title appendUrl:(NSString *)appendUrl {
-}
-
-
 @end
