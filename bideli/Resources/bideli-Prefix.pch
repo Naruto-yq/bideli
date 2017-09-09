@@ -12,5 +12,6 @@
 #import "Macros.h"
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
+#import "QJProgressHUD.h"
 
 #endif /* bideli_Prefix_pch */

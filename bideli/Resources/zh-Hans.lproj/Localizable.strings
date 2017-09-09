@@ -7,7 +7,16 @@
 */
 //-----首页
 "Home" = "首页";
-
+"Purchase" = "购买";
+"Credit" = "信用";
+"stoneUnit" = "(克)";
+"stoneWeight" = "原石重量";
+"Please input stone weight" = "请输入购买原石量(不能低于30克)";
+"Please select account" = "请选择账户";
+"Sharer" = "共享者";
+"MyOrder" = "我的订单";
+"" = "";
+"" = "";
 //-------个人中心
 "Me" = "我";
 "BankCard" = "银行卡管理";
