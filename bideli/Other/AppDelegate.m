@@ -28,12 +28,14 @@
     
     
     [self registerBaiduMap];
-    //self.window.rootViewController = [[QJMainTabBarController alloc] init];
-//    [self startLocation];
+ /*   self.window.rootViewController = [[QJMainTabBarController alloc] init];
+    [self startLocation];
     
-//    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权
-//      
-//    }
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) { // 暂未授权
+      
+    }
+  */
+    
     return YES;
 }
 

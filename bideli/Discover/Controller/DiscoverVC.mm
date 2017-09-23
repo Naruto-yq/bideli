@@ -77,10 +77,10 @@
         _mapView.delegate =self;
         //设置地图的显示样式
         _mapView.mapType = BMKMapTypeStandard;
-        _mapView.buildingsEnabled = YES;//设定地图是否现显示3D楼块效果
+        _mapView.buildingsEnabled = NO;//设定地图是否现显示3D楼块效果
         _mapView.overlookEnabled = YES; //设定地图View能否支持俯仰角
         //在手机上当前可使用的级别为3-21级
-        _mapView.zoomLevel = 16;
+        _mapView.zoomLevel = 14;
         //设定地图是否打开路况图层
         _mapView.trafficEnabled = NO;
         //底图poi标注
@@ -150,7 +150,9 @@
 #pragma mark -- mapView delegate
 - (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id <BMKAnnotation>)annotation {
     // 创建大头针
-    BusinessPointView *annotationView = [BusinessPointView annotationViewWithMap:mapView withAnnotation:annotation];
+    BusinessPointView *annotationView = [BusinessPointView businessPointViewWithMapView:mapView Annotation:annotation];//[BusinessPointView annotationViewWithMap:mapView withAnnotation:annotation];
+    MapPointAnnotation *mapAnnotation = (MapPointAnnotation *)annotation;
+    annotationView.mapPointModel = mapAnnotation.mapPointModel;
     annotationView.animatesDrop = YES;
     // 设置可拖拽
     annotationView.draggable = YES;

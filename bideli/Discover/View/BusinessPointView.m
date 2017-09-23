@@ -32,31 +32,31 @@
 }
 */
 
-- (instancetype)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier]) {
-        [self setupSubviews];
-    }
-    return self;
-}
-
-+ (instancetype)annotationViewWithMap:(BMKMapView *)mapView withAnnotation:(id <BMKAnnotation>)annotation {
-    if ([annotation isKindOfClass:[BMKPointAnnotation class]]) {
-        static NSString *identifier = @"annotation";
-        // 1.从缓存池中取
-        BusinessPointView *annoView = (BusinessPointView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-        // 2.如果缓存池中没有, 创建一个新的
-        if (annoView == nil) {
-            annoView = [[BusinessPointView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
-        }
-        if ([annotation isKindOfClass:[MapPointAnnotation class]]) {
-            annoView.annotation = (MapPointAnnotation *)annotation;
-        }
-        
-        annoView.image = [UIImage imageNamed:@"mapPointBg"];
-        return annoView;
-    }
-    return nil;
-}
+//- (instancetype)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
+//    if (self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier]) {
+//        [self setupSubviews];
+//    }
+//    return self;
+//}
+//
+//+ (instancetype)annotationViewWithMap:(BMKMapView *)mapView withAnnotation:(id <BMKAnnotation>)annotation {
+//    if ([annotation isKindOfClass:[BMKPointAnnotation class]]) {
+//        static NSString *identifier = @"annotation";
+//        // 1.从缓存池中取
+//        BusinessPointView *annoView = (BusinessPointView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+//        // 2.如果缓存池中没有, 创建一个新的
+//        if (annoView == nil) {
+//            annoView = [[BusinessPointView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+//        }
+//        if ([annotation isKindOfClass:[MapPointAnnotation class]]) {
+//            annoView.annotation = (MapPointAnnotation *)annotation;
+//        }
+//        
+//        annoView.image = [UIImage imageNamed:@"mapPointBg"];
+//        return annoView;
+//    }
+//    return nil;
+//}
 
 + (instancetype)businessPointViewWithMapView:(BMKMapView *)mapView Annotation:(id<BMKAnnotation>)annotation {
     NSString *identifier = @"businessPointView";
@@ -71,7 +71,7 @@
     }
     return mapPointView;
 }
-/*
+
 - (id)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -81,24 +81,24 @@
         [view setImage:[UIImage imageNamed:@"mapPointBg"]];
         _bgView = view;
         
-        UILabel *label = [[UILabel alloc] init];
+        UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(view.frame)/2.0f - 15, 20, 30, 30)];
+        [image setImage:[UIImage imageNamed:@"common_img_agent"]];
+        image.layer.cornerRadius = 15;
+        image.layer.masksToBounds = YES;
+        [_bgView addSubview:image];
+        _imageView = image;
+        
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(image.frame), CGRectGetWidth(view.frame), 20)];
         label.textColor = kC9_FFFFFF;
-        label.font = kF5_14;
+        label.font = kF6_13;
         label.text = MyLocalizedString(@"BusinessLabelText");
         label.textAlignment = NSTextAlignmentCenter;
         [_bgView addSubview:label];
         _nameLabel = label;
-        
-        UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 40, 40)];
-        [image setImage:[UIImage imageNamed:@"common_img_agent"]];
-        image.layer.cornerRadius = 30;
-        image.layer.masksToBounds = YES;
-        [_bgView addSubview:image];
-        _imageView = image;
     }
     return self;
 }
-*/
+
 - (void)setMapPointModel:(MapPointModel *)mapPointModel {
     _mapPointModel = mapPointModel;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:mapPointModel.imageUrl] placeholderImage:[UIImage imageNamed:@"common_img_agent"]];
@@ -106,15 +106,4 @@
 }
 
 
-
-- (void)setupSubviews {
-    UILabel *titleLabel = [UILabel new];
-    titleLabel.text = @"xxx";
-    [self addSubview:titleLabel];
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    self.titleLabel.frame = self.bounds;
-}
 @end
