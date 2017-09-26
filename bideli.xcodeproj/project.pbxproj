@@ -458,7 +458,6 @@
 			children = (
 				CC2FF6C81F7A8F3E00E4D6F8 /* Exhibition */,
 				CC2FF6B91F7A81ED00E4D6F8 /* RechargeWithdraw */,
-				CC2FF6B81F7A817800E4D6F8 /* Trade */,
 				CCD729B21F63CBB000A4B8A3 /* ResultDetail */,
 				CCD729811F6394D000A4B8A3 /* Purchase */,
 				0EB4E9031F56544F008441DF /* AssetButton */,
@@ -686,13 +685,6 @@
 				CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CC2FF6B81F7A817800E4D6F8 /* Trade */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Trade;
 			sourceTree = "<group>";
 		};
 		CC2FF6B91F7A81ED00E4D6F8 /* RechargeWithdraw */ = {
