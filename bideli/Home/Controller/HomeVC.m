@@ -10,6 +10,7 @@
 #import "DiscoverVC.h"
 #import "PurchaseStoneVC.h"
 #import "TradeVC.h"
+#import "ExhibitionVC.h"
 #import "ChoseRechargeWithdrawVC.h"
 #import "BannerView.h"
 #import "InteractionCell.h"
@@ -203,6 +204,13 @@
         {
             ChoseRechargeWithdrawVC *choseVc = [[ChoseRechargeWithdrawVC alloc] init];
             [self.navigationController pushViewController:choseVc animated:YES];
+        }
+            break;
+            
+        case 4:
+        {
+            ExhibitionVC *exhibitionVC = [[ExhibitionVC alloc] init];
+            [self.navigationController pushViewController:exhibitionVC animated:YES];
         }
             break;
             

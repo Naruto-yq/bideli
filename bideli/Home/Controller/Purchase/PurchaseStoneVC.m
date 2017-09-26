@@ -12,8 +12,6 @@
 #import "ChoseSharerVC.h"
 #import "BankCardListVC.h"
 #import "BankCardInfo.h"
-#import "UIImage+ResizedImage.h"
-#import "NSMutableAttributedString+CustomerAttributedString.h"
 
 @interface PurchaseStoneVC ()<UITextFieldDelegate, BankCardListVcDelegate>
 @property (nonatomic, weak) OneFieldView *stoneFieldView;
@@ -39,6 +37,7 @@
     stoneFieldView.textField.attributedPlaceholder = [NSMutableAttributedString getAttributedPlaceholder:MyLocalizedString(@"Please input stone weight")];
     stoneFieldView.borderStyle = ZZLCTextFieldBorderStyleNone;
     [stoneFieldView.textField addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    stoneFieldView.unitText = MyLocalizedString(@"stoneUnit");;
     [self.view addSubview:stoneFieldView];
     self.stoneFieldView = stoneFieldView;
     
@@ -77,7 +76,7 @@
         self.tipLabel.textColor = [UIColor redColor];
         return;
     }else {
-        if ([self.stoneFieldView.textField.text floatValue] <= 30.0) {
+        if ([self.stoneFieldView.textField.text floatValue] < 30.0) {
             self.tipLabel.text = @"购买原石量不能小于30克";
             self.tipLabel.textColor = [UIColor redColor];
             return;

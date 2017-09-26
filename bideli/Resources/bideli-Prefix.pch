@@ -13,5 +13,7 @@
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
 #import "QJProgressHUD.h"
+#import "UIImage+ResizedImage.h"
+#import "NSMutableAttributedString+CustomerAttributedString.h"
 
 #endif /* bideli_Prefix_pch */

@@ -49,6 +49,15 @@
 		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
 		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
 		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
+		CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */; };
+		CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */; };
+		CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */; };
+		CC2FF6C71F7A8E4600E4D6F8 /* ExhibitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6C61F7A8E4600E4D6F8 /* ExhibitionVC.m */; };
+		CC2FF6CB1F7A8F5200E4D6F8 /* ExhibitionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6CA1F7A8F5200E4D6F8 /* ExhibitionCell.m */; };
+		CC2FF6D11F7A91C300E4D6F8 /* hupo1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CD1F7A91C300E4D6F8 /* hupo1.JPG */; };
+		CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */; };
+		CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */; };
+		CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */; };
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729741F6387E400A4B8A3 /* PurchaseStoneVC.m */; };
 		CCD729781F6388D700A4B8A3 /* ChoseSharerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729771F6388D700A4B8A3 /* ChoseSharerVC.m */; };
@@ -178,6 +187,20 @@
 		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
 		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
 		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
+		CC2FF6BA1F7A820E00E4D6F8 /* RechargeWithdrawCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeWithdrawCell.h; sourceTree = "<group>"; };
+		CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeWithdrawCell.m; sourceTree = "<group>"; };
+		CC2FF6BD1F7A8A2600E4D6F8 /* WithdrawResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawResultVC.h; sourceTree = "<group>"; };
+		CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawResultVC.m; sourceTree = "<group>"; };
+		CC2FF6C11F7A8B1C00E4D6F8 /* BankCardSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardSelectView.h; sourceTree = "<group>"; };
+		CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardSelectView.m; sourceTree = "<group>"; };
+		CC2FF6C51F7A8E4600E4D6F8 /* ExhibitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionVC.h; sourceTree = "<group>"; };
+		CC2FF6C61F7A8E4600E4D6F8 /* ExhibitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionVC.m; sourceTree = "<group>"; };
+		CC2FF6C91F7A8F5200E4D6F8 /* ExhibitionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitionCell.h; sourceTree = "<group>"; };
+		CC2FF6CA1F7A8F5200E4D6F8 /* ExhibitionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitionCell.m; sourceTree = "<group>"; };
+		CC2FF6CD1F7A91C300E4D6F8 /* hupo1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo1.JPG; sourceTree = "<group>"; };
+		CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo2.JPG; sourceTree = "<group>"; };
+		CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo3.JPG; sourceTree = "<group>"; };
+		CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo4.JPG; sourceTree = "<group>"; };
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCD729731F6387E400A4B8A3 /* PurchaseStoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseStoneVC.h; sourceTree = "<group>"; };
@@ -265,6 +288,8 @@
 				0E147BB61F7A30D500507B5D /* RechargeVC.m */,
 				0E147BB81F7A30E700507B5D /* WithdrawVC.h */,
 				0E147BB91F7A30E700507B5D /* WithdrawVC.m */,
+				CC2FF6BD1F7A8A2600E4D6F8 /* WithdrawResultVC.h */,
+				CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */,
 			);
 			path = RechargeWithdraw;
 			sourceTree = "<group>";
@@ -409,6 +434,7 @@
 			children = (
 				CCD729791F6391D700A4B8A3 /* HomeVC.h */,
 				0EE7C2E71F53BB4A00464B25 /* HomeVC.m */,
+				CC2FF6C41F7A8E2B00E4D6F8 /* Exhibition */,
 				CCD729721F6387BB00A4B8A3 /* Purchase */,
 				CCD7297A1F6391F200A4B8A3 /* Trade */,
 				0E147BB11F7A2FFE00507B5D /* RechargeWithdraw */,
@@ -430,6 +456,9 @@
 		0EE7C28C1F53B00400464B25 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC2FF6C81F7A8F3E00E4D6F8 /* Exhibition */,
+				CC2FF6B91F7A81ED00E4D6F8 /* RechargeWithdraw */,
+				CC2FF6B81F7A817800E4D6F8 /* Trade */,
 				CCD729B21F63CBB000A4B8A3 /* ResultDetail */,
 				CCD729811F6394D000A4B8A3 /* Purchase */,
 				0EB4E9031F56544F008441DF /* AssetButton */,
@@ -542,6 +571,7 @@
 		0EE7C2DF1F53B09D00464B25 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CC2FF6CC1F7A91C300E4D6F8 /* stone */,
 				0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */,
 				0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */,
 				0EE7C2E01F53B09D00464B25 /* Assets.xcassets */,
@@ -656,6 +686,61 @@
 				CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC2FF6B81F7A817800E4D6F8 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		CC2FF6B91F7A81ED00E4D6F8 /* RechargeWithdraw */ = {
+			isa = PBXGroup;
+			children = (
+				CC2FF6C01F7A8B1C00E4D6F8 /* BankCardSelectView */,
+				CC2FF6BA1F7A820E00E4D6F8 /* RechargeWithdrawCell.h */,
+				CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */,
+			);
+			path = RechargeWithdraw;
+			sourceTree = "<group>";
+		};
+		CC2FF6C01F7A8B1C00E4D6F8 /* BankCardSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				CC2FF6C11F7A8B1C00E4D6F8 /* BankCardSelectView.h */,
+				CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */,
+			);
+			path = BankCardSelectView;
+			sourceTree = "<group>";
+		};
+		CC2FF6C41F7A8E2B00E4D6F8 /* Exhibition */ = {
+			isa = PBXGroup;
+			children = (
+				CC2FF6C51F7A8E4600E4D6F8 /* ExhibitionVC.h */,
+				CC2FF6C61F7A8E4600E4D6F8 /* ExhibitionVC.m */,
+			);
+			path = Exhibition;
+			sourceTree = "<group>";
+		};
+		CC2FF6C81F7A8F3E00E4D6F8 /* Exhibition */ = {
+			isa = PBXGroup;
+			children = (
+				CC2FF6C91F7A8F5200E4D6F8 /* ExhibitionCell.h */,
+				CC2FF6CA1F7A8F5200E4D6F8 /* ExhibitionCell.m */,
+			);
+			path = Exhibition;
+			sourceTree = "<group>";
+		};
+		CC2FF6CC1F7A91C300E4D6F8 /* stone */ = {
+			isa = PBXGroup;
+			children = (
+				CC2FF6CD1F7A91C300E4D6F8 /* hupo1.JPG */,
+				CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */,
+				CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */,
+				CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */,
+			);
+			path = stone;
 			sourceTree = "<group>";
 		};
 		CCBC99081F55A763001DFEC4 /* AssetView */ = {
@@ -868,10 +953,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */,
+				CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */,
+				CC2FF6D11F7A91C300E4D6F8 /* hupo1.JPG in Resources */,
 				0EE7C2E41F53B09D00464B25 /* Assets.xcassets in Resources */,
 				CCF8ECA71F56F9A400D78A8C /* Localizable.strings in Resources */,
 				0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */,
 				0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */,
+				CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */,
+				CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,22 +1055,27 @@
 				CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */,
 				0EEFA58C1F550FCC0014C7A6 /* BannerView.m in Sources */,
 				CC02939F1F63E87D00A3410A /* BusinessPaoPaoView.m in Sources */,
+				CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */,
 				CCD729B11F63AF3200A4B8A3 /* UIImage-Extensions.m in Sources */,
 				CCD729B01F63AF3200A4B8A3 /* UIImage+ResizedImage.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
+				CC2FF6CB1F7A8F5200E4D6F8 /* ExhibitionCell.m in Sources */,
 				0E147BB41F7A305F00507B5D /* ChoseRechargeWithdrawVC.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,
 				CCD7297D1F63920900A4B8A3 /* TradeVC.m in Sources */,
 				CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */,
+				CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */,
 				CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */,
 				CCD729AC1F63AF3200A4B8A3 /* NSString+Extensions.m in Sources */,
 				CCD729B51F63CBCB00A4B8A3 /* OrderView.m in Sources */,
 				0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */,
+				CC2FF6C71F7A8E4600E4D6F8 /* ExhibitionVC.m in Sources */,
 				0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */,
 				0EE7C2F31F53BC2F00464B25 /* DiscoverVC.mm in Sources */,
 				CCD729801F6392EF00A4B8A3 /* ResultDetailVC.m in Sources */,
 				0EE7C2D11F53B00400464B25 /* QJTabBarButton.m in Sources */,
+				CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */,
 				CCD729B81F63D2A500A4B8A3 /* OrderProgressView.m in Sources */,
 				CCD7298D1F63A4BA00A4B8A3 /* OneFieldView.m in Sources */,
 				0EB4E9061F56544F008441DF /* LatestProfitButton.m in Sources */,

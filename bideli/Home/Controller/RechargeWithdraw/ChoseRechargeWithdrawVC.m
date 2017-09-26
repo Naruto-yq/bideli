@@ -7,6 +7,7 @@
 //
 
 #import "ChoseRechargeWithdrawVC.h"
+#import "RechargeWithdrawCell.h"
 #import "RechargeVC.h"
 #import "WithdrawVC.h"
 
@@ -41,11 +42,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"choseRechargeWithdrawCell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"choseRechargeWithdrawCell"];
-    }
-    cell.textLabel.text = @"充值";
+    NSArray *titleArr = @[@"充值", @"提现"];
+    RechargeWithdrawCell *cell = [RechargeWithdrawCell cellWithTableView:tableView];
+    cell.title = titleArr[indexPath.row];
     return cell;
 }
 

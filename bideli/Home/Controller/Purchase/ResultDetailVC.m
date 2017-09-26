@@ -36,11 +36,11 @@
     self.orderView.sharerName = self.sharerInfo.name;
     
     OrderProgressView *orderProgressView = [[OrderProgressView alloc] init];
-    orderProgressView.frame = CGRectMake(0, rHeight(108)+10, ViewW(self.view), ViewH(self.view)-(rHeight(108)+10+64+30));
+    orderProgressView.frame = CGRectMake(0, rHeight(108)+10, ViewW(self.view), ViewH(self.view)-(rHeight(108)+10+64+44));
     [self.view addSubview:orderProgressView];
     
     UIButton *finishButton = [[UIButton alloc] init];
-    finishButton.frame = CGRectMake(0, CGRectGetMaxY(orderProgressView.frame), ViewW(self.view), 30);
+    finishButton.frame = CGRectMake(0, CGRectGetMaxY(orderProgressView.frame), ViewW(self.view), 44);
     [finishButton setTitle:@"完成" forState:UIControlStateNormal];
     [finishButton setBackgroundColor:ConfirmButtonNormalColor];
     [finishButton addTarget:self action:@selector(clickFinishButton) forControlEvents:UIControlEventTouchUpInside];
