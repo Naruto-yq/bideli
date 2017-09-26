@@ -7,8 +7,10 @@
 //
 
 #import "HomeVC.h"
+#import "DiscoverVC.h"
 #import "PurchaseStoneVC.h"
 #import "TradeVC.h"
+#import "ChoseRechargeWithdrawVC.h"
 #import "BannerView.h"
 #import "InteractionCell.h"
 #import "AssetCell.h"
@@ -34,8 +36,8 @@
     
     NSArray *itemDicts = @[
                             @{@"title": @"采购原石",@"icon":@"purchase"}, @{@"title": @"寻宝",@"icon":@"purchase"}, @{@"title": @"交易",@"icon":@"trade"},
-                            @{@"title": @"充值提现",@"icon":@"rechargewithdraw"}, @{@"title": @"商城",@"icon":@"mall"}, @{@"title": @"支付",@"icon":@"purchase"},
-                            @{@"title": @"预留",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"}, @{@"title": @"预留",@"icon":@"purchase"},
+                            @{@"title": @"充值提现",@"icon":@"rechargewithdraw"}, @{@"title": @"成品展示",@"icon":@"mall"}, @{@"title": @"我的二维码",@"icon":@"purchase"},
+                            @{@"title": @"记录",@"icon":@"purchase"}, @{@"title": @"公告",@"icon":@"purchase"}, @{@"title": @"关于我们",@"icon":@"purchase"},
                             ];
     
     for (NSDictionary* dic in itemDicts) {
@@ -183,6 +185,13 @@
         }
             break;
             
+        case 1:
+        {
+            DiscoverVC *discoverVc = [[DiscoverVC alloc] init];
+            [self.navigationController pushViewController:discoverVc animated:YES];
+        }
+            break;
+            
         case 2:
         {
             TradeVC *tradeVc = [[TradeVC alloc] init];
@@ -190,7 +199,12 @@
         }
             break;
 
-
+        case 3:
+        {
+            ChoseRechargeWithdrawVC *choseVc = [[ChoseRechargeWithdrawVC alloc] init];
+            [self.navigationController pushViewController:choseVc animated:YES];
+        }
+            break;
             
         default:
             break;

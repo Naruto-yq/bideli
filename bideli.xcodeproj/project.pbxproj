@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E147BB41F7A305F00507B5D /* ChoseRechargeWithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB31F7A305F00507B5D /* ChoseRechargeWithdrawVC.m */; };
+		0E147BB71F7A30D500507B5D /* RechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB61F7A30D500507B5D /* RechargeVC.m */; };
+		0E147BBA1F7A30E700507B5D /* WithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB91F7A30E700507B5D /* WithdrawVC.m */; };
 		0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */; };
 		0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */; };
 		0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */; };
@@ -89,6 +92,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E147BB21F7A305F00507B5D /* ChoseRechargeWithdrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoseRechargeWithdrawVC.h; sourceTree = "<group>"; };
+		0E147BB31F7A305F00507B5D /* ChoseRechargeWithdrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoseRechargeWithdrawVC.m; sourceTree = "<group>"; };
+		0E147BB51F7A30D500507B5D /* RechargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeVC.h; sourceTree = "<group>"; };
+		0E147BB61F7A30D500507B5D /* RechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeVC.m; sourceTree = "<group>"; };
+		0E147BB81F7A30E700507B5D /* WithdrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawVC.h; sourceTree = "<group>"; };
+		0E147BB91F7A30E700507B5D /* WithdrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawVC.m; sourceTree = "<group>"; };
 		0E8CAEAD1F6235DC009A76B1 /* LanuchAVPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchAVPlayerVC.h; sourceTree = "<group>"; };
 		0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchAVPlayerVC.m; sourceTree = "<group>"; };
 		0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lanuch_movie.mp4; sourceTree = "<group>"; };
@@ -247,6 +256,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E147BB11F7A2FFE00507B5D /* RechargeWithdraw */ = {
+			isa = PBXGroup;
+			children = (
+				0E147BB21F7A305F00507B5D /* ChoseRechargeWithdrawVC.h */,
+				0E147BB31F7A305F00507B5D /* ChoseRechargeWithdrawVC.m */,
+				0E147BB51F7A30D500507B5D /* RechargeVC.h */,
+				0E147BB61F7A30D500507B5D /* RechargeVC.m */,
+				0E147BB81F7A30E700507B5D /* WithdrawVC.h */,
+				0E147BB91F7A30E700507B5D /* WithdrawVC.m */,
+			);
+			path = RechargeWithdraw;
+			sourceTree = "<group>";
+		};
 		0E8CAEA91F62355E009A76B1 /* Newfeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,8 +409,9 @@
 			children = (
 				CCD729791F6391D700A4B8A3 /* HomeVC.h */,
 				0EE7C2E71F53BB4A00464B25 /* HomeVC.m */,
-				CCD7297A1F6391F200A4B8A3 /* Trade */,
 				CCD729721F6387BB00A4B8A3 /* Purchase */,
+				CCD7297A1F6391F200A4B8A3 /* Trade */,
+				0E147BB11F7A2FFE00507B5D /* RechargeWithdraw */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -929,6 +952,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1D8AB91F626DF40088B9E6 /* BusinessPointView.m in Sources */,
+				0E147BB71F7A30D500507B5D /* RechargeVC.m in Sources */,
 				0EE7C2E31F53B09D00464B25 /* main.m in Sources */,
 				0E8CDF451F58FE0200ED957C /* QJProgressHUD.m in Sources */,
 				CCD729AE1F63AF3200A4B8A3 /* UIBarButtonItem+NavleftBarButtonItem.m in Sources */,
@@ -946,6 +970,7 @@
 				CCD729B01F63AF3200A4B8A3 /* UIImage+ResizedImage.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
+				0E147BB41F7A305F00507B5D /* ChoseRechargeWithdrawVC.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,
 				CCD7297D1F63920900A4B8A3 /* TradeVC.m in Sources */,
 				CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */,
@@ -976,6 +1001,7 @@
 				CCD729AB1F63AF3200A4B8A3 /* NSMutableAttributedString+CustomerAttributedString.m in Sources */,
 				CCD729951F63A8C200A4B8A3 /* BankCardListCell.m in Sources */,
 				0EEFA5971F555DDA0014C7A6 /* BaseTableViewCell.m in Sources */,
+				0E147BBA1F7A30E700507B5D /* WithdrawVC.m in Sources */,
 				0EE7C2CD1F53B00400464B25 /* QJMainTabBarController.m in Sources */,
 				CCD729AD1F63AF3200A4B8A3 /* NSURLRequest+NSURLRequestWithIgnoreSSL.m in Sources */,
 				0EE5961B1F580727004DA871 /* UserInfoVC.m in Sources */,
