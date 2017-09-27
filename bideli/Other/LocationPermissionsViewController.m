@@ -9,6 +9,8 @@
 #import "LocationPermissionsViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "QJMainTabBarController.h"
+#import "QJNavigationController.h"
+#import "LoginVC.h"
 
 @interface LocationPermissionsViewController ()<CLLocationManagerDelegate>
 
@@ -87,7 +89,11 @@
  */
 - (void)changeRootViewController {
     // 将UITabBarController设置为跟控制器
-    [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+    if ([[GLobalLocalData getLoginState] boolValue]) {
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+    }else {
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJNavigationController alloc] initWithRootViewController:[[LoginVC alloc] init]];
+    }
 }
 
 @end
