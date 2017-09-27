@@ -66,7 +66,7 @@
 #define kF2_17_Bold    [UIFont boldSystemFontOfSize:17]
 
 //获取字符串
-#define GetLocalizedStringByKey(key) \
+#define MyLocalizedString(key) \
 [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:StringFile]
 
 

@@ -10,6 +10,22 @@
 		0E147BB41F7A305F00507B5D /* ChoseRechargeWithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB31F7A305F00507B5D /* ChoseRechargeWithdrawVC.m */; };
 		0E147BB71F7A30D500507B5D /* RechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB61F7A30D500507B5D /* RechargeVC.m */; };
 		0E147BBA1F7A30E700507B5D /* WithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E147BB91F7A30E700507B5D /* WithdrawVC.m */; };
+		0E8486351F7B96B000332407 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486341F7B96B000332407 /* LoginVC.m */; };
+		0E8486381F7B970F00332407 /* LoginFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486371F7B970F00332407 /* LoginFieldView.m */; };
+		0E84863B1F7B988E00332407 /* RegisterCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84863A1F7B988E00332407 /* RegisterCustomerButton.m */; };
+		0E8486431F7B992400332407 /* RegisteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84863D1F7B992400332407 /* RegisteViewController.m */; };
+		0E8486441F7B992400332407 /* SetPasswordViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E84863F1F7B992400332407 /* SetPasswordViewController.mm */; };
+		0E8486451F7B992400332407 /* SuccessRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486411F7B992400332407 /* SuccessRegisterViewController.m */; };
+		0E8486461F7B992400332407 /* SuccessRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8486421F7B992400332407 /* SuccessRegisterViewController.xib */; };
+		0E8486491F7B999B00332407 /* UICountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486481F7B999B00332407 /* UICountdownButton.m */; };
+		0E84864C1F7B99B000332407 /* OneFiledButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84864B1F7B99B000332407 /* OneFiledButtonView.m */; };
+		0E8486501F7B9D4F00332407 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84864F1F7B9D4F00332407 /* LocalData.m */; };
+		0E8486531F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486521F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m */; };
+		0E84865A1F7BA85800332407 /* CheckMsgCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486551F7BA85800332407 /* CheckMsgCodeViewController.m */; };
+		0E84865B1F7BA85800332407 /* InputPhoneNoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486571F7BA85800332407 /* InputPhoneNoViewController.m */; };
+		0E84865C1F7BA85800332407 /* SetNewLoginPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8486591F7BA85800332407 /* SetNewLoginPswViewController.m */; };
+		0E8486601F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E84865E1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m */; };
+		0E8486611F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E84865F1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib */; };
 		0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */; };
 		0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */; };
 		0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CAEB31F62547A009A76B1 /* LaunchScreen.storyboard */; };
@@ -107,6 +123,36 @@
 		0E147BB61F7A30D500507B5D /* RechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeVC.m; sourceTree = "<group>"; };
 		0E147BB81F7A30E700507B5D /* WithdrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawVC.h; sourceTree = "<group>"; };
 		0E147BB91F7A30E700507B5D /* WithdrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawVC.m; sourceTree = "<group>"; };
+		0E8486331F7B96B000332407 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		0E8486341F7B96B000332407 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		0E8486361F7B970F00332407 /* LoginFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFieldView.h; sourceTree = "<group>"; };
+		0E8486371F7B970F00332407 /* LoginFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFieldView.m; sourceTree = "<group>"; };
+		0E8486391F7B988E00332407 /* RegisterCustomerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterCustomerButton.h; sourceTree = "<group>"; };
+		0E84863A1F7B988E00332407 /* RegisterCustomerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterCustomerButton.m; sourceTree = "<group>"; };
+		0E84863C1F7B992400332407 /* RegisteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteViewController.h; sourceTree = "<group>"; };
+		0E84863D1F7B992400332407 /* RegisteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteViewController.m; sourceTree = "<group>"; };
+		0E84863E1F7B992400332407 /* SetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPasswordViewController.h; sourceTree = "<group>"; };
+		0E84863F1F7B992400332407 /* SetPasswordViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SetPasswordViewController.mm; sourceTree = "<group>"; };
+		0E8486401F7B992400332407 /* SuccessRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessRegisterViewController.h; sourceTree = "<group>"; };
+		0E8486411F7B992400332407 /* SuccessRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessRegisterViewController.m; sourceTree = "<group>"; };
+		0E8486421F7B992400332407 /* SuccessRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessRegisterViewController.xib; sourceTree = "<group>"; };
+		0E8486471F7B999B00332407 /* UICountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountdownButton.h; sourceTree = "<group>"; };
+		0E8486481F7B999B00332407 /* UICountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountdownButton.m; sourceTree = "<group>"; };
+		0E84864A1F7B99B000332407 /* OneFiledButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneFiledButtonView.h; sourceTree = "<group>"; };
+		0E84864B1F7B99B000332407 /* OneFiledButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneFiledButtonView.m; sourceTree = "<group>"; };
+		0E84864E1F7B9D4F00332407 /* LocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
+		0E84864F1F7B9D4F00332407 /* LocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
+		0E8486511F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MutableSafeCollections.h"; sourceTree = "<group>"; };
+		0E8486521F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MutableSafeCollections.m"; sourceTree = "<group>"; };
+		0E8486541F7BA85800332407 /* CheckMsgCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMsgCodeViewController.h; sourceTree = "<group>"; };
+		0E8486551F7BA85800332407 /* CheckMsgCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMsgCodeViewController.m; sourceTree = "<group>"; };
+		0E8486561F7BA85800332407 /* InputPhoneNoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputPhoneNoViewController.h; sourceTree = "<group>"; };
+		0E8486571F7BA85800332407 /* InputPhoneNoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputPhoneNoViewController.m; sourceTree = "<group>"; };
+		0E8486581F7BA85800332407 /* SetNewLoginPswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetNewLoginPswViewController.h; sourceTree = "<group>"; };
+		0E8486591F7BA85800332407 /* SetNewLoginPswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetNewLoginPswViewController.m; sourceTree = "<group>"; };
+		0E84865D1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessSetLoginPsdViewController.h; sourceTree = "<group>"; };
+		0E84865E1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessSetLoginPsdViewController.m; sourceTree = "<group>"; };
+		0E84865F1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessSetLoginPsdViewController.xib; sourceTree = "<group>"; };
 		0E8CAEAD1F6235DC009A76B1 /* LanuchAVPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchAVPlayerVC.h; sourceTree = "<group>"; };
 		0E8CAEAE1F6235DC009A76B1 /* LanuchAVPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchAVPlayerVC.m; sourceTree = "<group>"; };
 		0E8CAEB01F623729009A76B1 /* lanuch_movie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lanuch_movie.mp4; sourceTree = "<group>"; };
@@ -294,6 +340,72 @@
 			path = RechargeWithdraw;
 			sourceTree = "<group>";
 		};
+		0E84862F1F7B968300332407 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0E8486301F7B968300332407 /* Controller */,
+				0E8486311F7B968300332407 /* Model */,
+				0E8486321F7B968300332407 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0E8486301F7B968300332407 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E8486331F7B96B000332407 /* LoginVC.h */,
+				0E8486341F7B96B000332407 /* LoginVC.m */,
+				0E84863C1F7B992400332407 /* RegisteViewController.h */,
+				0E84863D1F7B992400332407 /* RegisteViewController.m */,
+				0E84863E1F7B992400332407 /* SetPasswordViewController.h */,
+				0E84863F1F7B992400332407 /* SetPasswordViewController.mm */,
+				0E8486401F7B992400332407 /* SuccessRegisterViewController.h */,
+				0E8486411F7B992400332407 /* SuccessRegisterViewController.m */,
+				0E8486421F7B992400332407 /* SuccessRegisterViewController.xib */,
+				0E8486561F7BA85800332407 /* InputPhoneNoViewController.h */,
+				0E8486571F7BA85800332407 /* InputPhoneNoViewController.m */,
+				0E8486541F7BA85800332407 /* CheckMsgCodeViewController.h */,
+				0E8486551F7BA85800332407 /* CheckMsgCodeViewController.m */,
+				0E8486581F7BA85800332407 /* SetNewLoginPswViewController.h */,
+				0E8486591F7BA85800332407 /* SetNewLoginPswViewController.m */,
+				0E84865D1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.h */,
+				0E84865E1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m */,
+				0E84865F1F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E8486311F7B968300332407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E8486321F7B968300332407 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E84864A1F7B99B000332407 /* OneFiledButtonView.h */,
+				0E84864B1F7B99B000332407 /* OneFiledButtonView.m */,
+				0E8486471F7B999B00332407 /* UICountdownButton.h */,
+				0E8486481F7B999B00332407 /* UICountdownButton.m */,
+				0E8486391F7B988E00332407 /* RegisterCustomerButton.h */,
+				0E84863A1F7B988E00332407 /* RegisterCustomerButton.m */,
+				0E8486361F7B970F00332407 /* LoginFieldView.h */,
+				0E8486371F7B970F00332407 /* LoginFieldView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E84864D1F7B9D4400332407 /* LocalDataTool */ = {
+			isa = PBXGroup;
+			children = (
+				0E84864E1F7B9D4F00332407 /* LocalData.h */,
+				0E84864F1F7B9D4F00332407 /* LocalData.m */,
+			);
+			path = LocalDataTool;
+			sourceTree = "<group>";
+		};
 		0E8CAEA91F62355E009A76B1 /* Newfeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +502,7 @@
 		0EE7C2401F53ADB800464B25 /* bideli */ = {
 			isa = PBXGroup;
 			children = (
+				0E84862F1F7B968300332407 /* Login */,
 				0E8CAEA91F62355E009A76B1 /* Newfeature */,
 				0EE7C2991F53B00400464B25 /* mainTabBar */,
 				0EE7C2741F53B00400464B25 /* Home */,
@@ -555,6 +668,7 @@
 		0EE7C2DB1F53B09D00464B25 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0E84864D1F7B9D4400332407 /* LocalDataTool */,
 				CC1D8ABE1F6272690088B9E6 /* LocationPermissionsViewController.h */,
 				CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */,
 				0EE7C2DC1F53B09D00464B25 /* AppDelegate.h */,
@@ -802,6 +916,8 @@
 		CCD7299C1F63AF3200A4B8A3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0E8486511F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.h */,
+				0E8486521F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m */,
 				CCD7299D1F63AF3200A4B8A3 /* NSMutableAttributedString+CustomerAttributedString.h */,
 				CCD7299E1F63AF3200A4B8A3 /* NSMutableAttributedString+CustomerAttributedString.m */,
 				CCD7299F1F63AF3200A4B8A3 /* NSString+Extensions.h */,
@@ -952,7 +1068,9 @@
 				0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */,
 				0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */,
 				CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */,
+				0E8486611F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib in Resources */,
 				CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */,
+				0E8486461F7B992400332407 /* SuccessRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,7 +1152,10 @@
 			files = (
 				CC1D8AB91F626DF40088B9E6 /* BusinessPointView.m in Sources */,
 				0E147BB71F7A30D500507B5D /* RechargeVC.m in Sources */,
+				0E8486351F7B96B000332407 /* LoginVC.m in Sources */,
+				0E8486501F7B9D4F00332407 /* LocalData.m in Sources */,
 				0EE7C2E31F53B09D00464B25 /* main.m in Sources */,
+				0E8486601F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m in Sources */,
 				0E8CDF451F58FE0200ED957C /* QJProgressHUD.m in Sources */,
 				CCD729AE1F63AF3200A4B8A3 /* UIBarButtonItem+NavleftBarButtonItem.m in Sources */,
 				CCD729871F63951300A4B8A3 /* SharerInfo.m in Sources */,
@@ -1042,6 +1163,7 @@
 				CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */,
 				0EE7C2D01F53B00400464B25 /* QJTabBar.m in Sources */,
 				0EE7C2CE1F53B00400464B25 /* QJNavigationController.m in Sources */,
+				0E84865A1F7BA85800332407 /* CheckMsgCodeViewController.m in Sources */,
 				0EEFA59A1F555DFA0014C7A6 /* InteractionCell.m in Sources */,
 				CCD7298A1F639C7400A4B8A3 /* CreditView.m in Sources */,
 				CC1D8AB51F626DEA0088B9E6 /* MapPointAnnotation.m in Sources */,
@@ -1049,24 +1171,30 @@
 				CC02939F1F63E87D00A3410A /* BusinessPaoPaoView.m in Sources */,
 				CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */,
 				CCD729B11F63AF3200A4B8A3 /* UIImage-Extensions.m in Sources */,
+				0E8486451F7B992400332407 /* SuccessRegisterViewController.m in Sources */,
 				CCD729B01F63AF3200A4B8A3 /* UIImage+ResizedImage.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
 				CC2FF6CB1F7A8F5200E4D6F8 /* ExhibitionCell.m in Sources */,
 				0E147BB41F7A305F00507B5D /* ChoseRechargeWithdrawVC.m in Sources */,
 				0EE596231F5808BE004DA871 /* MeCell.m in Sources */,
+				0E84864C1F7B99B000332407 /* OneFiledButtonView.m in Sources */,
 				CCD7297D1F63920900A4B8A3 /* TradeVC.m in Sources */,
 				CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */,
 				CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */,
+				0E84865C1F7BA85800332407 /* SetNewLoginPswViewController.m in Sources */,
 				CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */,
+				0E8486531F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m in Sources */,
 				CCD729AC1F63AF3200A4B8A3 /* NSString+Extensions.m in Sources */,
 				CCD729B51F63CBCB00A4B8A3 /* OrderView.m in Sources */,
 				0E8CAEAF1F6235DC009A76B1 /* LanuchAVPlayerVC.m in Sources */,
 				CC2FF6C71F7A8E4600E4D6F8 /* ExhibitionVC.m in Sources */,
 				0EEFA59D1F555EB90014C7A6 /* InteractionCollectionViewCell.m in Sources */,
 				0EE7C2F31F53BC2F00464B25 /* DiscoverVC.mm in Sources */,
+				0E8486441F7B992400332407 /* SetPasswordViewController.mm in Sources */,
 				CCD729801F6392EF00A4B8A3 /* ResultDetailVC.m in Sources */,
 				0EE7C2D11F53B00400464B25 /* QJTabBarButton.m in Sources */,
+				0E8486381F7B970F00332407 /* LoginFieldView.m in Sources */,
 				CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */,
 				CCD729B81F63D2A500A4B8A3 /* OrderProgressView.m in Sources */,
 				CCD7298D1F63A4BA00A4B8A3 /* OneFieldView.m in Sources */,
@@ -1074,6 +1202,7 @@
 				0EE7C2EB1F53BB6000464B25 /* MeVC.m in Sources */,
 				CCD729AF1F63AF3200A4B8A3 /* UIFont+UsedFont.m in Sources */,
 				CCD729841F6394E800A4B8A3 /* ChoseSharerCell.m in Sources */,
+				0E84865B1F7BA85800332407 /* InputPhoneNoViewController.m in Sources */,
 				CCD729981F63A94A00A4B8A3 /* BankCardInfo.m in Sources */,
 				0EEFA58D1F550FCC0014C7A6 /* BannerViewCell.m in Sources */,
 				0EE7C2E81F53BB4A00464B25 /* HomeVC.m in Sources */,
@@ -1084,12 +1213,15 @@
 				CCD729911F63A87500A4B8A3 /* BankCardListVC.m in Sources */,
 				CC1D8AB61F626DEA0088B9E6 /* MapPointModel.m in Sources */,
 				0EE7C2E21F53B09D00464B25 /* AppDelegate.m in Sources */,
+				0E8486431F7B992400332407 /* RegisteViewController.m in Sources */,
 				CCD729AB1F63AF3200A4B8A3 /* NSMutableAttributedString+CustomerAttributedString.m in Sources */,
 				CCD729951F63A8C200A4B8A3 /* BankCardListCell.m in Sources */,
 				0EEFA5971F555DDA0014C7A6 /* BaseTableViewCell.m in Sources */,
 				0E147BBA1F7A30E700507B5D /* WithdrawVC.m in Sources */,
+				0E8486491F7B999B00332407 /* UICountdownButton.m in Sources */,
 				0EE7C2CD1F53B00400464B25 /* QJMainTabBarController.m in Sources */,
 				CCD729AD1F63AF3200A4B8A3 /* NSURLRequest+NSURLRequestWithIgnoreSSL.m in Sources */,
+				0E84863B1F7B988E00332407 /* RegisterCustomerButton.m in Sources */,
 				0EE5961B1F580727004DA871 /* UserInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

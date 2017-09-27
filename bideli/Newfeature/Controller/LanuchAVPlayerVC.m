@@ -9,8 +9,10 @@
 #import "LanuchAVPlayerVC.h"
 #import <AVFoundation/AVFoundation.h>
 #import "QJMainTabBarController.h"
+#import "QJNavigationController.h"
 #import <BaiduMapAPI_Location/BMKLocationService.h>
 #import "LocationPermissionsViewController.h"
+#import "LoginVC.h"
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -38,11 +40,11 @@
     // 设置界面
     [self setupView];
     //添加监听
-    [self addNotification];
+    //[self addNotification];
     //初始化视频
-    [self prepareMovie];
+    //[self prepareMovie];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:8.0 target:self selector:@selector(enterMain) userInfo:nil repeats:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(enterMain) userInfo:nil repeats:NO];
     
 }
 - (void)dealloc {
@@ -152,9 +154,11 @@
 }
 //进入主界面
 - (void)enterMain {
-    [self startLocation];
-
-//    APPD.keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+    if ([[GLobalLocalData getLoginState] boolValue]) {
+        [self startLocation];
+    }else {
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJNavigationController alloc] initWithRootViewController:[[LoginVC alloc] init]];
+    }
 }
 
 #pragma mark --定位开启
