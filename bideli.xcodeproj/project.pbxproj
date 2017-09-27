@@ -46,6 +46,7 @@
 		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
 		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
 		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
+		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729741F6387E400A4B8A3 /* PurchaseStoneVC.m */; };
 		CCD729781F6388D700A4B8A3 /* ChoseSharerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729771F6388D700A4B8A3 /* ChoseSharerVC.m */; };
@@ -169,6 +170,7 @@
 		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
 		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
 		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
+		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCD729731F6387E400A4B8A3 /* PurchaseStoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseStoneVC.h; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 				CC1D8AB81F626DF40088B9E6 /* BusinessPointView.m */,
 				CC02939D1F63E87D00A3410A /* BusinessPaoPaoView.h */,
 				CC02939E1F63E87D00A3410A /* BusinessPaoPaoView.m */,
+				CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -846,6 +849,7 @@
 			files = (
 				0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */,
 				0EE7C2E41F53B09D00464B25 /* Assets.xcassets in Resources */,
+				CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */,
 				CCF8ECA71F56F9A400D78A8C /* Localizable.strings in Resources */,
 				0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */,
 				0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */,

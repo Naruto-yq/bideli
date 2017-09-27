@@ -69,28 +69,31 @@
         mapPointView.draggable = NO;
         mapPointView.enabled = YES;
     }
+    mapPointView.userInteractionEnabled = YES;
     return mapPointView;
 }
 
 - (id)initWithAnnotation:(id<BMKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
-        UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 100)];
+        UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 120)];
         [view setUserInteractionEnabled:YES];
         [self addSubview:view];
         [view setImage:[UIImage imageNamed:@"mapPointBg"]];
         _bgView = view;
+        UIGestureRecognizer *ges = [[UIGestureRecognizer alloc] initWithTarget:self action:@selector(annotationDidSelectAction)];
+        [view addGestureRecognizer:ges];
         
-        UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(view.frame)/2.0f - 15, 20, 30, 30)];
+        UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(view.frame)/2.0f - 15, 40, 30, 30)];
         [image setImage:[UIImage imageNamed:@"common_img_agent"]];
         image.layer.cornerRadius = 15;
         image.layer.masksToBounds = YES;
         [_bgView addSubview:image];
         _imageView = image;
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(image.frame), CGRectGetWidth(view.frame), 20)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(image.frame), CGRectGetWidth(view.frame), 18)];
         label.textColor = kC9_FFFFFF;
-        label.font = kF6_13;
+        label.font = kF7_12;
         label.text = MyLocalizedString(@"BusinessLabelText");
         label.textAlignment = NSTextAlignmentCenter;
         [_bgView addSubview:label];
@@ -105,5 +108,7 @@
     self.nameLabel.text = mapPointModel.name;
 }
 
-
+- (void)annotationDidSelectAction {
+    NSLog(@"点击标注");
+}
 @end

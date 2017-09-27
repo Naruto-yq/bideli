@@ -17,8 +17,9 @@
 #import "MapPointAnnotation.h"
 #import "DiscoverViewModel.h"
 #import "JJSBaiduLocationManager.h"
+#import "BusinessPaoPaoView.h"
 
-@interface DiscoverVC ()<BMKMapViewDelegate,BMKLocationServiceDelegate,BMKPoiSearchDelegate>
+@interface DiscoverVC ()<BMKMapViewDelegate,BMKLocationServiceDelegate,BMKPoiSearchDelegate,BusinessPaopaoViewDelagate>
 
 @property (nonatomic,strong) BMKMapView *mapView;//地图视图
 @property (nonatomic,strong) NSMutableArray *businessDataSource;//商家数据
@@ -81,6 +82,7 @@
         _mapView.overlookEnabled = YES; //设定地图View能否支持俯仰角
         //在手机上当前可使用的级别为3-21级
         _mapView.zoomLevel = 14;
+        _mapView.gesturesEnabled = YES;
         //设定地图是否打开路况图层
         _mapView.trafficEnabled = NO;
         //底图poi标注
@@ -154,11 +156,21 @@
     MapPointAnnotation *mapAnnotation = (MapPointAnnotation *)annotation;
     annotationView.mapPointModel = mapAnnotation.mapPointModel;
     annotationView.animatesDrop = YES;
+    BusinessPaoPaoView *customerPaoPaoView = [BusinessPaoPaoView createWithNib];
+    customerPaoPaoView.frame=CGRectMake(100, 200, 300, 200);
+    customerPaoPaoView.delegate = self;
+    customerPaoPaoView.pointModel = mapAnnotation.mapPointModel;
+    annotationView.paopaoView = [[BMKActionPaopaoView alloc] initWithCustomView:customerPaoPaoView];
+    annotationView.canShowCallout = YES;
     // 设置可拖拽
     annotationView.draggable = YES;
     return annotationView;
 }
 
+- (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
+    //被点击
+   
+}
 #pragma mark --百度地图代理
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
     NSLog(@"百度定位当前位置%f,%f", userLocation.location.coordinate.latitude, userLocation.location.coordinate.longitude);
