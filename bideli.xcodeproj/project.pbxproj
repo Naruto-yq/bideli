@@ -65,7 +65,7 @@
 		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
 		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
 		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
-		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
+		CC22BAFB1F7BDEE00009A860 /* trade_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC22BAFA1F7BDEE00009A860 /* trade_bg.jpg */; };
 		CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */; };
 		CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */; };
 		CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */; };
@@ -75,6 +75,7 @@
 		CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */; };
 		CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */; };
 		CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */; };
+		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729741F6387E400A4B8A3 /* PurchaseStoneVC.m */; };
 		CCD729781F6388D700A4B8A3 /* ChoseSharerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729771F6388D700A4B8A3 /* ChoseSharerVC.m */; };
@@ -234,8 +235,7 @@
 		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
 		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
 		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
-		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
-
+		CC22BAFA1F7BDEE00009A860 /* trade_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trade_bg.jpg; sourceTree = "<group>"; };
 		CC2FF6BA1F7A820E00E4D6F8 /* RechargeWithdrawCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeWithdrawCell.h; sourceTree = "<group>"; };
 		CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeWithdrawCell.m; sourceTree = "<group>"; };
 		CC2FF6BD1F7A8A2600E4D6F8 /* WithdrawResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawResultVC.h; sourceTree = "<group>"; };
@@ -250,6 +250,7 @@
 		CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo2.JPG; sourceTree = "<group>"; };
 		CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo3.JPG; sourceTree = "<group>"; };
 		CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo4.JPG; sourceTree = "<group>"; };
+		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCD729731F6387E400A4B8A3 /* PurchaseStoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseStoneVC.h; sourceTree = "<group>"; };
@@ -845,6 +846,7 @@
 		CC2FF6CC1F7A91C300E4D6F8 /* stone */ = {
 			isa = PBXGroup;
 			children = (
+				CC22BAFA1F7BDEE00009A860 /* trade_bg.jpg */,
 				CC2FF6CD1F7A91C300E4D6F8 /* hupo1.JPG */,
 				CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */,
 				CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */,
@@ -1021,8 +1023,8 @@
 				TargetAttributes = {
 					0EE7C23D1F53ADB800464B25 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T4VX2QZR2Y;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = EY6GSRQCA8;
+						ProvisioningStyle = Manual;
 					};
 					0EE7C2561F53ADB900464B25 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1071,6 +1073,7 @@
 				CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */,
 				CCF8ECA71F56F9A400D78A8C /* Localizable.strings in Resources */,
 				0E8CAEB41F62547A009A76B1 /* LaunchScreen.storyboard in Resources */,
+				CC22BAFB1F7BDEE00009A860 /* trade_bg.jpg in Resources */,
 				0EE7C2E51F53B09D00464B25 /* Info.plist in Resources */,
 				CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */,
 				0E8486611F7BA9AD00332407 /* SuccessSetLoginPsdViewController.xib in Resources */,
@@ -1374,19 +1377,19 @@
 			baseConfigurationReference = A0D19527291C33A896983DD2 /* Pods-bideli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Liu (8G7UZXDP4S)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T4VX2QZR2Y;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Liu (EGX3ZBF4E3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hao Liu (EGX3ZBF4E3)";
+				DEVELOPMENT_TEAM = EY6GSRQCA8;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Resources/bideli-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/bideli/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.bideli;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxm.bideli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "01501e66-562d-465b-bb49-f7b59d517877";
+				PROVISIONING_PROFILE_SPECIFIER = xbideli_profile;
 			};
 			name = Debug;
 		};
@@ -1395,19 +1398,19 @@
 			baseConfigurationReference = B2F394F121282C27BF364883 /* Pods-bideli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Liu (8G7UZXDP4S)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T4VX2QZR2Y;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Liu (EGX3ZBF4E3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hao Liu (EGX3ZBF4E3)";
+				DEVELOPMENT_TEAM = EY6GSRQCA8;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Resources/bideli-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/bideli/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuqin.bideli;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zxm.bideli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "01501e66-562d-465b-bb49-f7b59d517877";
+				PROVISIONING_PROFILE_SPECIFIER = xbideli_profile;
 			};
 			name = Release;
 		};

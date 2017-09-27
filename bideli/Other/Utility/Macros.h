@@ -10,7 +10,7 @@
 #define Macros_h
 
 //#define APPKEY_BaiDuMap @"TmXwfzot2GL0G1oS2OsfiIMGrvceA1Sh" //bundleId:com.liubo.hake
-#define APPKEY_BaiDuMap @"wia9R6nYimxncXMqc0WBqltG0ZmvUOps" //bundleId:com.yuqin.bideli
+#define APPKEY_BaiDuMap @"ogu7lgN0IYYZVDTo41RPjpNWQnyWavdG" //bundleId:com.zxm.bideli
 
 #import "UtilsMacros.h"
 

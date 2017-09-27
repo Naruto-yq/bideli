@@ -53,8 +53,13 @@
 }
 
 - (void)setupSubviews {
+    UIImageView *logoView = [UIImageView new];
+    logoView.frame = CGRectMake((SCREEN_WIDTH-80)/2, 20, 80, 80);
+    logoView.image = [UIImage imageNamed:@"glod_logo"];
+    [self.view addSubview:logoView];
+    
     LoginFieldView *phoneNumView = [[LoginFieldView alloc] init];
-    phoneNumView.frame = CGRectMake(MarginW, 0, ViewW(self.view)-2*MarginW, 66);
+    phoneNumView.frame = CGRectMake(MarginW, CGRectGetMaxY(logoView.frame)+ 20, ViewW(self.view)-2*MarginW, 66);
     phoneNumView.textField.keyboardType = UIKeyboardTypePhonePad;
     phoneNumView.textField.attributedPlaceholder = [NSMutableAttributedString getAttributedPlaceholder:@"请输入您的手机号" color:HEXCOLOR(0x888888) fontSize:rFontSize(textFieldFontSize)];
     UIView *customView =[[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.3)];
@@ -84,7 +89,7 @@
     loginButton.layer.cornerRadius = 4.0f;
     loginButton.enabled = NO;
     [loginButton setBackgroundImage:[UIImage imageWithColor:HEXCOLOR(0xcccccc)] forState:UIControlStateDisabled];
-    [loginButton setBackgroundImage:[UIImage imageWithColor:HEXCOLOR(0x5584d5)] forState:UIControlStateNormal];
+    [loginButton setBackgroundImage:[UIImage imageWithColor:HEXCOLOR(0xfbd860)] forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [loginButton setTitle:@"登录" forState:UIControlStateNormal];
     [loginButton addTarget:self action:@selector(ClickLoginButton:) forControlEvents:UIControlEventTouchUpInside];
