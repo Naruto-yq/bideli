@@ -27,7 +27,6 @@
     self.window.rootViewController = [[LanuchAVPlayerVC alloc] init];
 
     [self registerBaiduMap];
-<<<<<<< HEAD
   /*  self.window.rootViewController = [[QJMainTabBarController alloc] init];
     [self startLocation];
     
@@ -35,8 +34,6 @@
       
     }
  */
-=======
->>>>>>> 17a653072cff7bb330818a6e22e5c94c296b0d43
     
     return YES;
 }

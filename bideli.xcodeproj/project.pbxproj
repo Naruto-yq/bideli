@@ -65,9 +65,7 @@
 		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
 		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
 		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
-<<<<<<< HEAD
 		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
-=======
 		CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */; };
 		CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */; };
 		CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */; };
@@ -77,7 +75,6 @@
 		CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */; };
 		CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */; };
 		CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */; };
->>>>>>> 17a653072cff7bb330818a6e22e5c94c296b0d43
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729741F6387E400A4B8A3 /* PurchaseStoneVC.m */; };
 		CCD729781F6388D700A4B8A3 /* ChoseSharerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729771F6388D700A4B8A3 /* ChoseSharerVC.m */; };
@@ -237,9 +234,8 @@
 		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
 		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
 		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
-=======
+
 		CC2FF6BA1F7A820E00E4D6F8 /* RechargeWithdrawCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeWithdrawCell.h; sourceTree = "<group>"; };
 		CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeWithdrawCell.m; sourceTree = "<group>"; };
 		CC2FF6BD1F7A8A2600E4D6F8 /* WithdrawResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawResultVC.h; sourceTree = "<group>"; };
@@ -254,7 +250,6 @@
 		CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo2.JPG; sourceTree = "<group>"; };
 		CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo3.JPG; sourceTree = "<group>"; };
 		CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo4.JPG; sourceTree = "<group>"; };
->>>>>>> 17a653072cff7bb330818a6e22e5c94c296b0d43
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCD729731F6387E400A4B8A3 /* PurchaseStoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseStoneVC.h; sourceTree = "<group>"; };
