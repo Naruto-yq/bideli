@@ -9,7 +9,7 @@
 #import "UIFont+UsedFont.h"
 
 @implementation UIFont (UsedFont)
-+ (UIFont *)defaultFontofSize:(CGFloat)fontSize {
++ (UIFont *)systemFontOfSize:(CGFloat)fontSize {
     if ([UIFont fontWithName:fontName_PingFang size:fontSize] != nil) {
         return [UIFont fontWithName:fontName_PingFang size:fontSize];
     }else {

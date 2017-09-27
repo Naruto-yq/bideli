@@ -45,6 +45,7 @@
     unitLabel.font = [UIFont systemFontOfSize:IndicateLabelTFontSize];
     [self addSubview:unitLabel];
     self.unitLabel = unitLabel;
+    self.unitLabel.hidden = YES;
 }
 
 - (void)layoutSubviews {
@@ -87,6 +88,14 @@
     }else {
         self.textField.borderStyle = UITextBorderStyleNone;
         self.textField.backgroundColor = self.backgroundColor;
+    }
+}
+
+- (void)setUnitText:(NSString *)unitText {
+    if (unitText.length) {
+        self.unitLabel.hidden = NO;
+    }else {
+        self.unitLabel.hidden = YES;
     }
 }
 @end

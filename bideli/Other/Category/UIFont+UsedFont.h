@@ -14,6 +14,6 @@ static NSString *fontName_PingFangMedium = @"PingFangSC-Medium";
 static NSString *fontName_RobotoRegular = @"Roboto";
 
 @interface UIFont (UsedFont)
-+ (UIFont *)defaultFontofSize:(CGFloat)fontSize;
++ (UIFont *)systemFontOfSize:(CGFloat)fontSize;
 + (UIFont *)fontWithName:(NSString *)fontName ofSize:(CGFloat)fontSize;
 @end

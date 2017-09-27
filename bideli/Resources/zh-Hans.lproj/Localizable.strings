@@ -28,3 +28,12 @@
 "UserNickname" = "昵称";
 "PhoneNumber" = "电话号码";
 "Logout" = "退出登录";
+//------register
+"PasswordPlaceholder" = "密码由6-16位数字、字母组成";
+"SetPassword" = "设置密码";
+"PasswordTip1" = "密码必须大于等于6位";
+"PasswordTip2" = "密码必须由字母和数字组成";
+"PasswordTip3" = "密码长度须小于16位";
+"PasswordTip4" = "两次输入密码不一致";
+"SuccessRegister" = "注册成功";
+"ReturnInvestmentUI" = "返回登录界面";

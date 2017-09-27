@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, ZZLCTextFieldBorderStyle) {
 
 @interface OneFieldView : UIView
 @property (nonatomic, copy)NSString *labelText;
+@property (nonatomic, copy)NSString *unitText;
 @property(nonatomic, weak)UILabel *label;
 @property(nonatomic, weak)UITextField *textField;
 @property (nonatomic, assign)ZZLCTextFieldBorderStyle borderStyle;
