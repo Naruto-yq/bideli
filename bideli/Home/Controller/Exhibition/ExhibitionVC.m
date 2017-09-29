@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.imageArr = @[@"hupo1.jpg", @"hupo2.jpg", @"hupo3.jpg", @"hupo4.jpg"];
+    self.imageArr = @[@"hupo1.JPG", @"hupo2.JPG", @"hupo3.JPG", @"hupo4.JPG"];
     self.desTextArr = @[@"A套餐产品", @"B套餐产品", @"C套餐产品", @"D套餐产品"];
 
     [self setupSubviews];

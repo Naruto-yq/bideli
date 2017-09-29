@@ -3,7 +3,7 @@
 //  bideli
 //
 //  Created by 余钦 on 2017/9/8.
-//  Copyright © 2017年 CMB Qianhai Financial Asset Exchange Co.Ltd. All rights reserved.
+//  Copyright © 2017年   reserved.
 //
 
 #import "LanuchAVPlayerVC.h"
@@ -40,11 +40,11 @@
     // 设置界面
     [self setupView];
     //添加监听
-    //[self addNotification];
+    [self addNotification];
     //初始化视频
-    //[self prepareMovie];
+    [self prepareMovie];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(enterMain) userInfo:nil repeats:NO];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:8.0 target:self selector:@selector(enterMain) userInfo:nil repeats:NO];
     
 }
 - (void)dealloc {
@@ -154,11 +154,7 @@
 }
 //进入主界面
 - (void)enterMain {
-    if ([[GLobalLocalData getLoginState] boolValue]) {
-        [self startLocation];
-    }else {
-        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJNavigationController alloc] initWithRootViewController:[[LoginVC alloc] init]];
-    }
+    [self startLocation];
 }
 
 #pragma mark --定位开启
@@ -170,7 +166,11 @@
         [self restoreRootViewController:locationPermissionsVC];
     } else {
         // 将UITabBarController设置为跟控制器
-        [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+        if ([[GLobalLocalData getLoginState] boolValue]) {
+            [UIApplication sharedApplication].keyWindow.rootViewController = [[QJMainTabBarController alloc] init];
+        }else {
+            [UIApplication sharedApplication].keyWindow.rootViewController = [[QJNavigationController alloc] initWithRootViewController:[[LoginVC alloc] init]];
+        }
     }
 }
 
