@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MapPointModel.h"
+
 @class MapPointModel,BusinessPaoPaoView;
 
 @protocol BusinessPaopaoViewDelagate <NSObject>

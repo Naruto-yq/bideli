@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bideli/Discover/Controller/DiscoverVC.mm"
@@ -16,22 +16,6 @@
             startingLineNumber = "171"
             endingLineNumber = "171"
             landmarkName = "-mapView:didSelectAnnotationView:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "bideli/Discover/View/BusinessPointView.m"
-            timestampString = "528198097.975834"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-annotationDidSelectAction"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

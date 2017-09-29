@@ -65,7 +65,6 @@
 		CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABC1F626DFE0088B9E6 /* DiscoverViewModel.m */; };
 		CC1D8AC01F6272690088B9E6 /* LocationPermissionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */; };
 		CC1D8AC31F6275FF0088B9E6 /* JJSBaiduLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */; };
-		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
 		CC2FF6BC1F7A820E00E4D6F8 /* RechargeWithdrawCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */; };
 		CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6BE1F7A8A2600E4D6F8 /* WithdrawResultVC.m */; };
 		CC2FF6C31F7A8B1C00E4D6F8 /* BankCardSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2FF6C21F7A8B1C00E4D6F8 /* BankCardSelectView.m */; };
@@ -75,6 +74,11 @@
 		CC2FF6D21F7A91C300E4D6F8 /* hupo2.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */; };
 		CC2FF6D31F7A91C300E4D6F8 /* hupo3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */; };
 		CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */; };
+		CC46DAA61F7B8D3200D3F01B /* BusinessPaoPaoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */; };
+		CC8498911F7E1D6C001741AE /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8498901F7E1D6C001741AE /* ShopDetailViewController.m */; };
+		CC8498941F7E1F71001741AE /* UIViewController+GetCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8498931F7E1F71001741AE /* UIViewController+GetCurrentViewController.m */; };
+		CC8498971F7E20EA001741AE /* shopInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8498961F7E20EA001741AE /* shopInfoView.m */; };
+		CC84989B1F7E2104001741AE /* shopInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC84989A1F7E2104001741AE /* shopInfoView.xib */; };
 		CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBC990A1F55A783001DFEC4 /* AssetCell.m */; };
 		CCD729751F6387E400A4B8A3 /* PurchaseStoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729741F6387E400A4B8A3 /* PurchaseStoneVC.m */; };
 		CCD729781F6388D700A4B8A3 /* ChoseSharerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD729771F6388D700A4B8A3 /* ChoseSharerVC.m */; };
@@ -234,8 +238,6 @@
 		CC1D8ABF1F6272690088B9E6 /* LocationPermissionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationPermissionsViewController.m; sourceTree = "<group>"; };
 		CC1D8AC11F6275FF0088B9E6 /* JJSBaiduLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSBaiduLocationManager.h; sourceTree = "<group>"; };
 		CC1D8AC21F6275FF0088B9E6 /* JJSBaiduLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSBaiduLocationManager.m; sourceTree = "<group>"; };
-		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
-
 		CC2FF6BA1F7A820E00E4D6F8 /* RechargeWithdrawCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeWithdrawCell.h; sourceTree = "<group>"; };
 		CC2FF6BB1F7A820E00E4D6F8 /* RechargeWithdrawCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeWithdrawCell.m; sourceTree = "<group>"; };
 		CC2FF6BD1F7A8A2600E4D6F8 /* WithdrawResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawResultVC.h; sourceTree = "<group>"; };
@@ -250,6 +252,14 @@
 		CC2FF6CE1F7A91C300E4D6F8 /* hupo2.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo2.JPG; sourceTree = "<group>"; };
 		CC2FF6CF1F7A91C300E4D6F8 /* hupo3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo3.JPG; sourceTree = "<group>"; };
 		CC2FF6D01F7A91C300E4D6F8 /* hupo4.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hupo4.JPG; sourceTree = "<group>"; };
+		CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessPaoPaoView.xib; sourceTree = "<group>"; };
+		CC84988F1F7E1D6C001741AE /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
+		CC8498901F7E1D6C001741AE /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
+		CC8498921F7E1F71001741AE /* UIViewController+GetCurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GetCurrentViewController.h"; sourceTree = "<group>"; };
+		CC8498931F7E1F71001741AE /* UIViewController+GetCurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GetCurrentViewController.m"; sourceTree = "<group>"; };
+		CC8498951F7E20EA001741AE /* shopInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shopInfoView.h; sourceTree = "<group>"; };
+		CC8498961F7E20EA001741AE /* shopInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shopInfoView.m; sourceTree = "<group>"; };
+		CC84989A1F7E2104001741AE /* shopInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shopInfoView.xib; sourceTree = "<group>"; };
 		CCBC99091F55A783001DFEC4 /* AssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCell.h; sourceTree = "<group>"; };
 		CCBC990A1F55A783001DFEC4 /* AssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCell.m; sourceTree = "<group>"; };
 		CCD729731F6387E400A4B8A3 /* PurchaseStoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseStoneVC.h; sourceTree = "<group>"; };
@@ -714,6 +724,8 @@
 			children = (
 				0EE7C2F11F53BC2F00464B25 /* DiscoverVC.h */,
 				0EE7C2F21F53BC2F00464B25 /* DiscoverVC.mm */,
+				CC84988F1F7E1D6C001741AE /* ShopDetailViewController.h */,
+				CC8498901F7E1D6C001741AE /* ShopDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -737,6 +749,9 @@
 				CC02939D1F63E87D00A3410A /* BusinessPaoPaoView.h */,
 				CC02939E1F63E87D00A3410A /* BusinessPaoPaoView.m */,
 				CC46DAA51F7B8D3200D3F01B /* BusinessPaoPaoView.xib */,
+				CC8498951F7E20EA001741AE /* shopInfoView.h */,
+				CC8498961F7E20EA001741AE /* shopInfoView.m */,
+				CC84989A1F7E2104001741AE /* shopInfoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -920,6 +935,8 @@
 		CCD7299C1F63AF3200A4B8A3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CC8498921F7E1F71001741AE /* UIViewController+GetCurrentViewController.h */,
+				CC8498931F7E1F71001741AE /* UIViewController+GetCurrentViewController.m */,
 				0E8486511F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.h */,
 				0E8486521F7B9F6F00332407 /* NSMutableDictionary+MutableSafeCollections.m */,
 				CCD7299D1F63AF3200A4B8A3 /* NSMutableAttributedString+CustomerAttributedString.h */,
@@ -1065,6 +1082,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8CAEB11F6239D1009A76B1 /* lanuch_movie.mp4 in Resources */,
+				CC84989B1F7E2104001741AE /* shopInfoView.xib in Resources */,
 				CC2FF6D41F7A91C300E4D6F8 /* hupo4.JPG in Resources */,
 				CC2FF6D11F7A91C300E4D6F8 /* hupo1.JPG in Resources */,
 				0EE7C2E41F53B09D00464B25 /* Assets.xcassets in Resources */,
@@ -1161,6 +1179,7 @@
 				0E8486501F7B9D4F00332407 /* LocalData.m in Sources */,
 				0EE7C2E31F53B09D00464B25 /* main.m in Sources */,
 				0E8486601F7BA9AD00332407 /* SuccessSetLoginPsdViewController.m in Sources */,
+				CC8498971F7E20EA001741AE /* shopInfoView.m in Sources */,
 				0E8CDF451F58FE0200ED957C /* QJProgressHUD.m in Sources */,
 				CCD729AE1F63AF3200A4B8A3 /* UIBarButtonItem+NavleftBarButtonItem.m in Sources */,
 				CCD729871F63951300A4B8A3 /* SharerInfo.m in Sources */,
@@ -1177,6 +1196,7 @@
 				CC2FF6BF1F7A8A2600E4D6F8 /* WithdrawResultVC.m in Sources */,
 				CCD729B11F63AF3200A4B8A3 /* UIImage-Extensions.m in Sources */,
 				0E8486451F7B992400332407 /* SuccessRegisterViewController.m in Sources */,
+				CC8498941F7E1F71001741AE /* UIViewController+GetCurrentViewController.m in Sources */,
 				CCD729B01F63AF3200A4B8A3 /* UIImage+ResizedImage.m in Sources */,
 				0EB4E9091F565ADE008441DF /* ItemInfo.m in Sources */,
 				CCBC990B1F55A783001DFEC4 /* AssetCell.m in Sources */,
@@ -1210,6 +1230,7 @@
 				0E84865B1F7BA85800332407 /* InputPhoneNoViewController.m in Sources */,
 				CCD729981F63A94A00A4B8A3 /* BankCardInfo.m in Sources */,
 				0EEFA58D1F550FCC0014C7A6 /* BannerViewCell.m in Sources */,
+				CC8498911F7E1D6C001741AE /* ShopDetailViewController.m in Sources */,
 				0EE7C2E81F53BB4A00464B25 /* HomeVC.m in Sources */,
 				CC1D8ABD1F626DFE0088B9E6 /* DiscoverViewModel.m in Sources */,
 				CCD7299B1F63AD2C00A4B8A3 /* SelectAccountView.m in Sources */,
@@ -1374,7 +1395,7 @@
 			baseConfigurationReference = A0D19527291C33A896983DD2 /* Pods-bideli.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Liu (8G7UZXDP4S)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = T4VX2QZR2Y;
 				ENABLE_BITCODE = NO;
@@ -1395,7 +1416,7 @@
 			baseConfigurationReference = B2F394F121282C27BF364883 /* Pods-bideli.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Liu (8G7UZXDP4S)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = T4VX2QZR2Y;
 				ENABLE_BITCODE = NO;

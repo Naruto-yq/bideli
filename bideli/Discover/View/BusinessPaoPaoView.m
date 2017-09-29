@@ -7,6 +7,9 @@
 //
 
 #import "BusinessPaoPaoView.h"
+#import "ShopDetailViewController.h"
+#import "UIViewController+GetCurrentViewController.h"
+#import "MapPointModel.h"
 
 @interface BusinessPaoPaoView()
 @property (weak, nonatomic) IBOutlet UIImageView *headerImage;
@@ -33,11 +36,16 @@
 }
 
 - (IBAction)cancelButtonAction:(UIButton *)sender {
-    
+    UIViewController *currentCtl = [UIViewController getCurrentViewController];
+//    [currentCtl sendevent]
+    [currentCtl remoteControlReceivedWithEvent:UIEventTypeTouches];
 }
 
 - (IBAction)sureButtonAction:(UIButton *)sender {
-
+    ShopDetailViewController *shopVC = [[ShopDetailViewController alloc] init];
+    shopVC.shopTitle = self.pointModel.name;
+    UIViewController *currentCtl = [UIViewController getCurrentViewController];
+    [currentCtl.navigationController pushViewController:shopVC animated:YES];
 }
 
 @end
