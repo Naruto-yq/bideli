@@ -2,7 +2,7 @@
 //  LoginVC.m
 //  bideli
 //
-//  Created by 余钦 on 2017/9/27.
+//  Created by 余钦 on 杨丽娟 2017/9/27.
 //  Copyright © 2017年 bideli. All rights reserved.
 //
 
